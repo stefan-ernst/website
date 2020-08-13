@@ -10,10 +10,18 @@ export default function Styles() {
               font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto,
                 Oxygen, Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue,
                 sans-serif;
+              background-color: rgba(43,147,228,0.87);
               background-image: linear-gradient(365deg, rgba(43,147,228,0.87) 22%, rgba(14,39,62,0.92) 87%);
               padding: 0;
               color: white;
-              // rgba(24,56,133,0.92)
+            }
+            a {
+                color: white;
+                text-decoration: none;
+            }
+            a:hover {
+                color: rgba(43,147,228,1);
+                text-decoration: none;
             }
             .grid-container {
               min-height: 100vh;
@@ -55,68 +63,73 @@ export default function Styles() {
             }
             
             #menu {
-              position: absolute;
-              width: 200px;
-              top: 50px;
-              right: 0;
-              height: calc(100vh - 50px);
-              
-              background: #000;
-              list-style-type: none;
-              -webkit-font-smoothing: antialiased;
-              /* to stop flickering of text in safari */
-        
+                position: absolute;
+                width: 200px;
+                top: 50px;
+                right: 0;
+                height: calc(100vh - 50px);
+                background: #000;
+                list-style-type: none;
+                -webkit-font-smoothing: antialiased;
             }
-            
             #menu ul {
-           
-              list-style: none;
-              display: block;
-              padding-left: 20px;
-              padding-bottom: 10px;
+                list-style: none;
+                display: block;
+                padding-left: 20px;
+                padding-bottom: 10px;
             }
-            
             .Footer { 
-             grid-area: Footer;
-             border-top: 1px solid white;
-             background-color: black;
-             color: #aaaaaa;
-             font-size: 0.7rem;
-             padding: 1rem;
-             text-align: center;
-             }
-            
-            .Main { grid-area: Main;
-              font-size: 2rem;
-              font-weight: 300;
-              padding: 1rem;
-              }
-              .Logo {
-                    width: 8rem;
-                  }
-              .Hero {
+                grid-area: Footer;
+                border-top: 1px solid white;
+                background-color: black;
+                color: #aaaaaa;
+                font-size: 1rem;
+                padding: 1rem;
+                text-align: center;
+            }
+            .Main { 
+                grid-area: Main;
+                font-size: 2rem;
+                font-weight: 300;
+                padding: 1rem;
+            }
+            .Plain {
+                background-color: #f5f5f5;
+                color: #1D222D;
+            }
+            .Blue {
+                background-color: rgba(43,147,228,1);
+            }
+            .Logo {
+                width: 9rem;
+            }
+            .Hero {
                 display: flex;
                 align-items: center;
                 justify-content: center;
-              }
-           
-              .Hero div {
+            }
+            .Hero div {
                 padding: 0.4rem;
-              }
-              nav {
+            }
+            nav {
+                font-size: 1rem;
                 max-width: 65%;
                 display: flex;
                 margin: auto;
                 justify-content: space-between;
                 align-items: center;
-              }
-              nav ul {
+            }
+            nav ul {
                 list-style: none;
                 display: flex;
-              }
-              nav li {
+                padding-left: 0px;
+            }
+            nav li {
                 padding: 0.5rem;
-              }
+            }
+            .Footer nav {
+                display: inline-block;
+            }
               @media only screen and (max-width: 1000px){
                   .Main { grid-area: Main;
                     font-size: 1.5rem;

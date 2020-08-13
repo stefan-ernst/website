@@ -1,20 +1,18 @@
-import {useState} from "react";
 import Header from "../components/header";
-import Menu from "../components/menu";
 import Nav from "../components/nav";
 import Footer from "../components/footer";
 
-export default function Home() {
+export default function Blog() {
 
     return (
         <>
             <Header />
-            <div className='grid-container'>
+            <div className='grid-container '>
                 <Nav />
 
                 <main className='Main'>
                     <div className='Hero'>
-                        Here is some white text in the hero
+                        We are at the blog!
                     </div>
                     <br/>
                 </main>
