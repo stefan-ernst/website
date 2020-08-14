@@ -27,7 +27,7 @@ export default function Home() {
                     </div>
                     <div className='Content'>
                         <div style={{textAlign:'center'}}>
-                            Products
+                            <a name='products'></a> Products
                             <div className={'Products'}>
                                 <Card>
                                     <img src={require('../public/minES.png?resize&size=300')} alt="Enhanced Sharing Preview" />

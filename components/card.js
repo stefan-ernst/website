@@ -13,7 +13,7 @@ export default function Card({children}) {
       }
       div:hover {
       box-shadow: 0 1px 1px 0 rgba(0,0,0,0.04), 0 2px 2px 0 rgba(0,0,0,0.04), 0 4px 4px 0 rgba(0,0,0,0.02), 0 12px 16px 0 rgba(0,0,0,0.16);
-      transform: scale(1.02);
+      transform: translateY(-.125em);
       }
       
     `}</style>

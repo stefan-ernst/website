@@ -2,6 +2,14 @@ import Menu from "./menu";
 import {useState} from "react";
 import Link from 'next/link'
 
+export const Items = () => (
+    <ul className='menu'>
+        <li><Link href="/#products"><a>Products</a></Link></li>
+        <li><Link href="/blog"><a>Blog</a></Link></li>
+        <li><Link href="/contact"><a>Contact</a></Link></li>
+    </ul>
+)
+
 export default function Nav() {
 
     const [menuOpen, setMenuOpen] = useState(false);
@@ -13,11 +21,7 @@ export default function Nav() {
                         className='Logo'/></a></Link>
 
                 <Menu open={menuOpen} setOpen={setMenuOpen}/>
-                <ul className='menu'>
-                    <li><Link href="/products"><a>Products</a></Link></li>
-                    <li><Link href="/blog"><a>Blog</a></Link></li>
-                    <li><Link href="/contact"><a>Contact</a></Link></li>
-                </ul>
+                <Items />
             </nav>
         </header>
     )

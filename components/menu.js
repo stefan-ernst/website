@@ -1,3 +1,5 @@
+import {Items} from "./nav";
+
 export default function Menu({open, setOpen}) {
 
     return (<>
@@ -7,12 +9,8 @@ export default function Menu({open, setOpen}) {
                 <span></span>
             </div>
 
-            {open && <div id="menu">
-                <ul>
-                    <li>Products</li>
-                    <li>Blog</li>
-                    <li>Contact</li>
-                </ul>
+            {open && <div id="menu" onClick={() => setOpen(!open)}>
+               <Items />
             </div>}
         </>
     );

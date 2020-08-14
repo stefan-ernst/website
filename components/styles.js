@@ -170,7 +170,7 @@ export default function Styles() {
                       display: grid;
                       grid-template-columns: 1fr;
                       grid-template-rows: 50px 1fr 90px;
-                      gap: 0px 0px;
+                      gap: 0 0;
                       grid-template-areas: "Header" "Main" "Footer";
                     }
                   .menu {
