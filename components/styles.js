@@ -10,8 +10,7 @@ export default function Styles() {
               font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto,
                 Oxygen, Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue,
                 sans-serif;
-              background-color: rgba(43,147,228,0.87);
-              background-image: linear-gradient(365deg, rgba(43,147,228,0.87) 22%, rgba(14,39,62,0.92) 87%);
+              background-color: #f5f5f5;
               padding: 0;
               color: white;
             }
@@ -29,11 +28,11 @@ export default function Styles() {
               grid-template-columns: 0.9fr 1.1fr 1fr 1fr 1fr;
               grid-template-rows: 80px 2.3fr 0.4fr;
               gap: 0px 0px;
-              grid-template-areas: "Header Header Header Header Header" ". Main Main Main ." "Footer Footer Footer Footer Footer";
+              grid-template-areas: "Header Header Header Header Header" "Main Main Main Main Main" "Footer Footer Footer Footer Footer";
             }
             
             .Header { grid-area: Header;
-             background-color: black;
+             background-color: #142533;
              border-bottom: 1px solid white;
              font-size: 0.9rem;
              padding: 0.5rem;
@@ -81,7 +80,7 @@ export default function Styles() {
             .Footer { 
                 grid-area: Footer;
                 border-top: 1px solid white;
-                background-color: black;
+                background-color: #142533;
                 color: #aaaaaa;
                 font-size: 1rem;
                 padding: 1rem;
@@ -89,13 +88,21 @@ export default function Styles() {
             }
             .Main { 
                 grid-area: Main;
-                font-size: 2rem;
                 font-weight: 300;
-                padding: 1rem;
             }
-            .Plain {
+            
+            .Content {
+                display: flex;
+                align-items: center;
+                font-size: 2rem;
+                justify-content: center;
+                padding: 4rem 1rem 4rem 1rem;
                 background-color: #f5f5f5;
                 color: #1D222D;
+            }
+            .Products {
+              display: flex;
+              margin-top: 2rem;
             }
             .Blue {
                 background-color: rgba(43,147,228,1);
@@ -106,7 +113,14 @@ export default function Styles() {
             .Hero {
                 display: flex;
                 align-items: center;
+                font-size: 2rem;
                 justify-content: center;
+                padding: 4rem 1rem 4rem 1rem;
+                background-color: rgba(43,147,228,0.87);
+                background-image: linear-gradient(365deg, rgba(43,147,228,0.87) 22%, rgba(14,39,62,0.92) 87%);
+            }
+            .Subtext  {
+                font-size: 1.3rem;
             }
             .Hero div {
                 padding: 0.4rem;
@@ -137,6 +151,12 @@ export default function Styles() {
                   }
                   .Logo {
                     width: 8rem;
+                  }
+                  .Products {
+                    flex-direction: column;
+                  }
+                  .Hero {
+                  text-align: center;
                   }
                   nav {
                   max-width: 100%;
