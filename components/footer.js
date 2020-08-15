@@ -10,14 +10,16 @@ export default function Footer() {
                         <Link href="/privacy">
                             <a>Privacy</a>
                         </Link></li>
-                    <li><Link href="/privacy">
-                        <a>Services</a>
-                    </Link></li>
-                    <li><Link href="/privacy">
-                        <a>Support</a>
-                    </Link></li>
+                    <li>
+                        <a href="https://realigned.ch">Services</a>
+                    </li>
+                    <li>
+                        <a href="https://realignedtechnologies.atlassian.net/servicedesk/customer/portals"
+                           target="_blank">Support</a>
+                    </li>
                 </ul>
-            </nav><br />
+            </nav>
+            <br/>
 
             &copy; 2020 Realigned Technologies Ltd<br/>
         </footer>

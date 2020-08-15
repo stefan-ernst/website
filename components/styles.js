@@ -30,6 +30,9 @@ export default function Styles() {
               gap: 0px 0px;
               grid-template-areas: "Header Header Header Header Header" "Main Main Main Main Main" "Footer Footer Footer Footer Footer";
             }
+            .content {
+              grid-template-areas: "Header Header Header Header Header" ". Main Main Main ." "Footer Footer Footer Footer Footer";
+            }
             
             .Header { grid-area: Header;
              background-color: #142533;
@@ -99,6 +102,14 @@ export default function Styles() {
                 padding: 4rem 1rem 4rem 1rem;
                 background-color: #f5f5f5;
                 color: #1D222D;
+            }
+            
+            .Document {
+                font-size: 1rem;
+                color: #1D222D;
+                padding: 1rem 3rem 1rem 3rem;
+                text-align: justify;
+                font-weight: normal;
             }
             .Products {
               display: flex;

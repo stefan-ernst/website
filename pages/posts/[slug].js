@@ -1,84 +1,65 @@
 import { useRouter } from 'next/router'
-import ErrorPage from 'next/error'
-import Container from '../../components/container'
-import PostBody from '../../components/post-body'
 import Header from '../../components/header'
-import PostHeader from '../../components/post-header'
-import Layout from '../../components/layout'
-import { getPostBySlug, getAllPosts } from '../../lib/api'
-import PostTitle from '../../components/post-title'
-import Head from 'next/head'
-import { CMS_NAME } from '../../lib/constants'
-import markdownToHtml from '../../lib/markdownToHtml'
+import Nav from "../../components/nav";
+import Footer from "../../components/footer";
+import matter from "gray-matter";
+import ReactMarkdown from "react-markdown";
 
-export default function Post({ post, morePosts, preview }) {
-    const router = useRouter()
-    if (!router.isFallback && !post?.slug) {
-        return <ErrorPage statusCode={404} />
-    }
+
+export default function Post({ markdownBody }) {
+
     return (
-        <Layout preview={preview}>
-            <Container>
-                <Header />
-                {router.isFallback ? (
-                    <PostTitle>Loading…</PostTitle>
-                ) : (
-                    <>
-                        <article className="mb-32">
-                            <Head>
-                                <title>
-                                    {post.title} | Next.js Blog Example with {CMS_NAME}
-                                </title>
-                                <meta property="og:image" content={post.ogImage.url} />
-                            </Head>
-                            <PostHeader
-                                title={post.title}
-                                coverImage={post.coverImage}
-                                date={post.date}
-                                author={post.author}
-                            />
-                            <PostBody content={post.content} />
-                        </article>
-                    </>
-                )}
-            </Container>
-        </Layout>
+        <>
+            <Header />
+            <div className='grid-container content'>
+                <Nav />
+
+                <main className='Main'>
+                    <div className='Document'>
+                        <ReactMarkdown source={markdownBody} />
+                    </div>
+                </main>
+
+                <Footer />
+            </div>
+        </>
     )
 }
 
-export async function getStaticProps({ params }) {
-    const post = getPostBySlug(params.slug, [
-        'title',
-        'date',
-        'slug',
-        'author',
-        'content',
-        'ogImage',
-        'coverImage',
-    ])
-    const content = await markdownToHtml(post.content || '')
+export async function getStaticProps({...ctx}) {
 
-    return {
-        props: {
-            post: {
-                ...post,
-                content,
-            },
-        },
-    }
+    const { slug } = ctx.params;
+    console.log(slug)
+    const content = await import(`../../_posts/blog/${slug}.mdx`)
+    const data = matter(content.default)
+
+    return {props: {
+        frontMatter: data.data,
+        markdownBody: data.content
+    }};
+}
+
+
+const getSlugs = (context) => {
+    const keys = context.keys()
+
+    const data = keys.map((key, index) => {
+        let slug = key.replace(/^.*[\\\/]/, '').slice(0, -3)
+
+        return slug.replace('.','')
+    })
+    return data
 }
 
 export async function getStaticPaths() {
-    const posts = getAllPosts(['slug'])
+    const blogSlugs = ((context) => {
+        return getSlugs(context)
+    })(require.context('../../_posts/blog', true, /\.mdx$/))
+
+    const paths = blogSlugs.map((slug) => `/posts/${slug}`)
 
     return {
-        paths: posts.map((post) => {
-            return {
-                params: {
-                    slug: post.slug,
-                },
-            }
-        }),
-        fallback: false,
+        paths, // An array of path names, and any params
+        fallback: false, // so that 404s properly appear if something's not matching
     }
 }

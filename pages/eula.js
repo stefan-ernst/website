@@ -1,7 +1,7 @@
 import Header from "../components/header";
 import Nav from "../components/nav";
 import Footer from "../components/footer";
-import { attributes, react as Privacy } from '../_posts/privacy.md';
+import { attributes, react as Eula } from '../_posts/eula.md';
 
 export default function Blog() {
 
@@ -12,9 +12,9 @@ export default function Blog() {
                 <Nav />
 
                 <main className='Main'>
-                    <p className='Document'>
-                        <Privacy />
-                    </p>
+                    <div className='Document'>
+                        <Eula />
+                    </div>
                 </main>
 
                 <Footer />
