@@ -8,6 +8,7 @@ Realigned Technologies legal basis for collecting and using the personal informa
 * You have given Realigned Technologies permission to do so
 * Processing your personal information is in Realigned Technologies legitimate interests
 * Realigned Technologies needs to comply with the law
+
 Realigned Technologies will retain your personal information only for as long as is necessary for the purposes set out in this Privacy Policy. We will retain and use your information to the extent necessary to comply with our legal obligations, resolve disputes, and enforce our policies.
 
 If you are a resident of the European Economic Area (EEA), you have certain data protection rights. If you wish to be informed what Personal Information we hold about you and if you want it to be removed from our systems, please contact us.

@@ -5,6 +5,7 @@ import Nav from "../components/nav";
 import Footer from "../components/footer";
 import HeroButton from "../components/HeroButton";
 import Card from "../components/card";
+import Link from "next/link";
 
 export default function Home() {
 
@@ -16,10 +17,10 @@ export default function Home() {
 
                 <main className='Main'>
                     <div className='Hero'>
-                       <div>
-                           Get more out of Confluence & Jira
+                       <div >
+                           <span className="animate__animated animate__fadeInUp">Driving efficiency</span>
                         <br />
-                        <p className='Subtext'>
+                        <p className='Subtext animate__animated animate__fadeInUp'>
                             With our Apps from the Atlassian Marketplace
                         </p>
                         <br /><HeroButton />
@@ -29,22 +30,28 @@ export default function Home() {
                         <div style={{textAlign:'center'}}>
                             <a name='products'></a> Products
                             <div className={'Products'}>
-                                <Card>
-                                    <img src={require('../public/minES.png?resize&size=300')} alt="Enhanced Sharing Preview" />
+                                <Link href="/enhancedsharing"><a> <Card>
+                                    <img src='ES.png' alt="Enhanced Sharing Illustration" />
                                     <br />
-                                    <p>Enhanced Sharing for Confluence</p>
-                                </Card>
+                                    <p className='standard'>Enhanced Sharing for Confluence</p>
+                                </Card></a></Link>
                                 <Card>
-                                    <img src={require('../public/minRC.png?resize&size=300')} alt="Read Confirmations Preview" />
+                                    <img src='RC.png' alt="Read Confirmations Illustration" />
                                     <br />
                                     <p>Read Confirmations for Confluence</p>
                                 </Card>
                                 <Card>
-                                    <img src={require('../public/minPD.png?resize&size=300')} alt="Personal Dashboards Preview" />
+                                    <img src='PD.png' alt="Personal Dashboards Illustration" />
                                     <br />
                                     <p>Personal Dashboards for Confluence</p>
                                 </Card>
                             </div>
+
+                            <br /><br />
+                            <small className={'Subtext MP'}>Available on the</small> <br />
+                            <img class='MP' src='marketplace.svg' style={{marginTop:15}} alt="Atlassian Marketplace Logo" />
+
+                            <br /><br />
 
                         </div>
                     </div>

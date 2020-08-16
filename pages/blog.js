@@ -11,7 +11,6 @@ export default function Blog({posts}) {
             <Header />
             <div className='grid-container '>
                 <Nav />
-
                 <main className='Main'>
                     <div className='Hero'>
                         We are at the blog!
@@ -50,7 +49,6 @@ export async function getStaticProps(context) {
             let slug = key.replace(/^.*[\\\/]/, '').slice(0, -3);
             const value = values[index]
             const document = matter(value.default)
-
             return {
                 slug: slug.replace('.',''),
                 ...document.data

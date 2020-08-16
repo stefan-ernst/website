@@ -29,7 +29,7 @@ export default function Post({ markdownBody }) {
 export async function getStaticProps({...ctx}) {
 
     const { slug } = ctx.params;
-    console.log(slug)
+
     const content = await import(`../../_posts/blog/${slug}.mdx`)
     const data = matter(content.default)
 

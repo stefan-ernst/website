@@ -1,4 +1,4 @@
-export default function HeroButton() {
+export default function Button({children}) {
 
     return (
         <>
@@ -8,17 +8,18 @@ export default function HeroButton() {
         color: white;
         border-radius: 3px;
         font-size: 1rem;
-        padding: 1rem 2rem 1rem 2rem;
-        font-weight: 600;
+        padding: 0.5rem 1rem 0.5rem 1rem;
+        font-weight: 500;
         border: 0;
         cursor: pointer;
+        display: inline;
       }
       button:hover {
         background: #003e63;
       }
     `}</style>
             <button>
-                Book a Demo
+                {children}
             </button>
         </>
     )

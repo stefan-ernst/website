@@ -9,6 +9,7 @@
     "export": "next export"
   },
   "dependencies": {
+    "animate.css": "^4.1.0",
     "gray-matter": "^4.0.2",
     "imagemin-optipng": "^8.0.0",
     "jimp": "^0.16.0",
