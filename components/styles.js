@@ -19,28 +19,24 @@ export default function Styles() {
                 text-decoration: none;
             }
             a:hover {
-                color: rgba(43,147,228,1);
+                color: rgb(10, 198, 255);
                 text-decoration: none;
             }
             .grid-container {
               min-height: 100vh;
               display: grid;
-              grid-template-columns: 0.9fr 1.1fr 1fr 1fr 1fr;
+              grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
               grid-template-rows: 100px 2.3fr 0.4fr;
               gap: 0px 0px;
               grid-template-areas: "Header Header Header Header Header" "Main Main Main Main Main" "Footer Footer Footer Footer Footer";
+              
+            background-image: linear-gradient( 154deg, rgb(1, 51, 115) 0%, rgba(26, 194, 232, 0.8) 100%);
             }
             .content {
               grid-template-areas: "Header Header Header Header Header" ". Main Main Main ." "Footer Footer Footer Footer Footer";
             }
             
-            .Header { grid-area: Header;
-             background-color: #1A4970;
-             border-bottom: 1px solid white;
-             font-size: 0.9rem;
-             padding: 0.5rem;
-             padding-top: 1rem;
-             }
+            
              
              #menuToggle {
              cursor: pointer;
@@ -82,14 +78,41 @@ export default function Styles() {
                 padding-left: 20px;
                 padding-bottom: 10px;
             }
+            .Header { 
+                 grid-area: Header;
+                
+                 font-size: 0.9rem;
+                 padding: 0.5rem;
+                 padding-top: 1rem;
+             }
             .Footer { 
                 grid-area: Footer;
-                border-top: 1px solid white;
-                background-color: #1A4970;
-                color: #f5f5f5;
+                background-color: white;
                 font-size: 1rem;
                 padding: 1rem;
                 text-align: center;
+                position: relative;
+                
+                color: #1D222D;
+            }
+            
+            .Footer::before {
+                content: "";
+                position: absolute;
+                height: 10px;
+                color: #fc73b4;
+                background: -moz-linear-gradient( 90deg, rgb(1, 51, 115) 0%, rgba(26, 194, 232, 0.8) 100%);
+                background: -webkit-linear-gradient( 90deg, rgb(1, 51, 115) 0%, rgba(26, 194, 232, 0.8) 100%);
+                background: linear-gradient( 90deg, rgb(1, 51, 115) 0%, rgba(26, 194, 232, 0.8) 100%);
+                top: 0;
+                bottom: 0;
+                left: 0;
+              }
+            .Footer a {
+                color: #1D222D;
+            }
+            .Footer a:hover {
+                color: rgb(10, 198, 255);
             }
             .pluginIcon {
                 margin-right: 20px;
@@ -109,9 +132,7 @@ export default function Styles() {
             }
             .Demo {
                 display: flex;
-                width:60%;
-                margin:auto;
-                align-items:flex-start;
+                justify-content: center;
             }
             .DemoNav {
                 border-right: 1px solid #1d1d1d;
@@ -129,13 +150,21 @@ export default function Styles() {
             .Content {
                 display: flex;
                 align-items: center;
-                font-size: 2rem;
+                font-size: 1rem;
                 justify-content: center;
-                padding: 4rem 1rem 4rem 1rem;
-                background-color: #f5f5f5;
+                padding: 1rem 1rem 1rem 1rem;
+                
+                background-color: #eee;
                 color: #1D222D;
             }
-            
+            .White {
+                background-color: #ffffff;
+                color: #1D222D;
+            }
+            .WithPadding {
+                
+                padding: 4rem 1rem 4rem 1rem;
+            }
             .Document {
                 font-size: 1rem;
                 color: #1D222D;
@@ -161,9 +190,8 @@ export default function Styles() {
                 font-size: 3rem;
                 justify-content: center;
                 font-weight: 300;
-                padding: 7rem 1rem 9rem 1rem;
-                background-color: rgba(43,147,228,0.87);
-                background-image: linear-gradient(345deg, #7DC6FD, #2D699B);
+                padding: 7rem 1rem 15rem 1rem;
+                
             }
             .Shadow {
                 box-shadow: 0 0 1px 0 rgba(0,0,0,0.08), 0 1px 1px 0 rgba(0,0,0,0.08), 0 4px 8px 0 rgba(0,0,0,0.08);
@@ -171,23 +199,7 @@ export default function Styles() {
             .Subtext  {
                 font-size: 1.5rem;
             }
-            .Hero:after {
-                position: absolute;
-                transform: rotate(-1.7deg);
-                -ms-transform: rotate(-1.7deg);
-                -webkit-transform: rotate(-1.7deg);
-                -o-transform: rotate(-1.7deg);
-                -moz-transform: rotate(-1.7deg);
-                background-color: #f5f5f5;
-                content: "";
-                z-index: 3;
-                display: block;
-                height: 70px;
-                transform-origin: 100%;
-                left: 0;
-                right: 0;
-                bottom: 0;
-            }
+            
             .Hero div {
                 padding: 0.4rem;
             }
@@ -225,7 +237,6 @@ export default function Styles() {
                   }
                   .Demo {
                     flex-direction: column;
-                    width: auto;
                     padding: 0;
                   }
                   .DemoNav {

@@ -4,7 +4,7 @@ export default function HeroButton() {
         <>
             <style jsx>{`
       button {
-        background-color: #1A4970;
+        background-color: #3699F2;
         color: white;
         border-radius: 3px;
         font-size: 1rem;
@@ -14,7 +14,7 @@ export default function HeroButton() {
         cursor: pointer;
       }
       button:hover {
-        background: #003e63;
+        background: #318CDD;
       }
     `}</style>
             <button>

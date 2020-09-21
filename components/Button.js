@@ -4,7 +4,7 @@ export default function Button({children}) {
         <>
             <style jsx>{`
       button {
-        background-color: #1A4970;
+        background-color: #468FD0;
         color: white;
         border-radius: 3px;
         font-size: 1rem;

@@ -27,7 +27,6 @@ export default function Footer() {
             <br/>
 
             &copy; 2020 Realigned Technologies Ltd<br/><br />
-            <small><a href="https://www.freepik.com" rel="noopener" target="_blank">Illustrations by - www.freepik.com</a></small>
         </footer>
     )
 }
