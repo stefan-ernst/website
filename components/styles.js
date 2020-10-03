@@ -30,7 +30,7 @@ export default function Styles() {
               gap: 0px 0px;
               grid-template-areas: "Header Header Header Header Header" "Main Main Main Main Main" "Footer Footer Footer Footer Footer";
               
-            background-image: linear-gradient( 154deg, rgb(1, 51, 115) 0%, rgba(26, 194, 232, 0.8) 100%);
+            background-image: linear-gradient( 154deg, rgb(1, 51, 115) 0%, rgb(20, 132, 188) 100%);
             }
             .content {
               grid-template-areas: "Header Header Header Header Header" ". Main Main Main ." "Footer Footer Footer Footer Footer";
@@ -95,19 +95,6 @@ export default function Styles() {
                 
                 color: #1D222D;
             }
-            
-            .Footer::before {
-                content: "";
-                position: absolute;
-                height: 10px;
-                color: #fc73b4;
-                background: -moz-linear-gradient( 90deg, rgb(1, 51, 115) 0%, rgba(26, 194, 232, 0.8) 100%);
-                background: -webkit-linear-gradient( 90deg, rgb(1, 51, 115) 0%, rgba(26, 194, 232, 0.8) 100%);
-                background: linear-gradient( 90deg, rgb(1, 51, 115) 0%, rgba(26, 194, 232, 0.8) 100%);
-                top: 0;
-                bottom: 0;
-                left: 0;
-              }
             .Footer a {
                 color: #1D222D;
             }
@@ -180,18 +167,49 @@ export default function Styles() {
                 background-color: rgba(43,147,228,1);
             }
             .Logo {
-                width: 12rem;
+                width: 14rem;
             }
             .Hero {
                 position: relative;
                 box-sizing: border-box;
                 display: flex;
-                align-items: center;
-                font-size: 3rem;
+                align-items: top;
+                font-size: 2.2rem;
                 justify-content: center;
                 font-weight: 300;
-                padding: 7rem 1rem 15rem 1rem;
+                padding: 7rem 0 10rem 0;
                 
+            }
+            .Hero small {
+                font-size: 1.2rem;
+            }
+            .Hero a {
+                font-weight: 500;
+            }  
+            .Hero .minor {
+                font-size: 1.8rem;
+                text-align: center;
+            }
+            .Highlight {
+                font-size: 2.4rem;
+                font-weight: 300;
+                 color: #1D222D;
+            }
+            .flex {
+                display: flex;
+                justify-content: center;
+                flex-direction: row;
+            }
+            .half {
+               flex-grow: 1;
+               flex-shrink: 1;
+               flex-basis: 0%;
+               padding: 30px;
+            }
+            .container {
+                max-width: 1140px;
+                align-items: center;
+                font-size: 1.3rem;
             }
             .Shadow {
                 box-shadow: 0 0 1px 0 rgba(0,0,0,0.08), 0 1px 1px 0 rgba(0,0,0,0.08), 0 4px 8px 0 rgba(0,0,0,0.08);
@@ -206,6 +224,7 @@ export default function Styles() {
             nav {
                 font-size: 1rem;
                 max-width: 65%;
+                padding-top: 0.5rem;
                 display: flex;
                 margin: auto;
                 justify-content: space-between;
@@ -234,6 +253,9 @@ export default function Styles() {
                   }
                   .Document {
                     padding: 0.5rem;
+                  }
+                  .flex {
+                    flex-direction: column;
                   }
                   .Demo {
                     flex-direction: column;

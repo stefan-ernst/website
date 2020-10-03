@@ -23,7 +23,7 @@ export default function Blog({posts}) {
                             posts.map((post) => {
                                 return (
                                     <li key={post.slug}>
-                                        <img src={post.coverImage} />
+                                        <img src={post.coverImage} style={{width:'20rem'}} />
                                         <Link href={`/posts/${post.slug}`}><a>{post.title}</a></Link>
                                     </li>
                                 )
