@@ -8,12 +8,15 @@ export default function Blog() {
     return (
         <>
             <Header />
-            <div className='grid-container content'>
+            <div className='grid-container'>
                 <Nav />
 
                 <main className='Main'>
-                    <p className='Document'>
+                    <p className='Content'>
+                        <div className={'flex text blog'}>
                         <Privacy />
+                        <br />
+                        </div>
                     </p>
                 </main>
 

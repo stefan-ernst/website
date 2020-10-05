@@ -12,24 +12,21 @@ export default function Blog({posts}) {
             <div className='grid-container '>
                 <Nav />
                 <main className='Main'>
-                    <div className='Hero'>
-                        We are at the blog!
-                    </div>
                     <br/>
-                    <div className='Document'>
-                        {!posts && <div>No posts!</div>}
-                        <ul>
-                            {posts &&
-                            posts.map((post) => {
-                                return (
-                                    <li key={post.slug}>
-                                        <img src={post.coverImage} style={{width:'20rem'}} />
-                                        <Link href={`/posts/${post.slug}`}><a>{post.title}</a></Link>
-                                    </li>
-                                )
-                            })}
-                        </ul>
-                    </div>
+                    {!posts && <div>No posts!</div>}
+                    {posts &&
+                    posts.map((post, index) => {
+                        return (
+                            <div className={'Content'} key={post.slug}>
+                                <div className={'flex container blog'}>
+                                <div className={'half'}> <img src={post.coverImage} style={{width:'100%'}} /></div>
+                                    <div className={'half'}>
+                                        <span><Link href={`/posts/${post.slug}`}><a>{post.title}</a></Link></span><br />
+                                        <small>{post.excerpt}</small></div>
+                                </div>
+                            </div>
+                        )
+                    })}
 
                 </main>
 

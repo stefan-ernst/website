@@ -17,7 +17,7 @@ export default function Nav() {
     return (
         <header className='Header'>
             <nav role="navigation" aria-label="Main">
-                <Link href="/"><a><img src="Realigned_Single.svg" alt="Realigned Logo"
+                <Link href="/"><a><img src="/Realigned_Single.svg" alt="Realigned Logo"
                         className='Logo'/></a></Link>
 
                 <Menu open={menuOpen} setOpen={setMenuOpen}/>

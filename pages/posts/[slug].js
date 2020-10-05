@@ -11,13 +11,15 @@ export default function Post({ markdownBody }) {
     return (
         <>
             <Header />
-            <div className='grid-container content'>
+            <div className='grid-container'>
                 <Nav />
 
                 <main className='Main'>
-                    <div className='Document'>
+                    <p className='Content FullPage'>
+                        <div className={'flex text blog blog_content'}>
                         <ReactMarkdown source={markdownBody} />
-                    </div>
+                        </div>
+                    </p>
                 </main>
 
                 <Footer />

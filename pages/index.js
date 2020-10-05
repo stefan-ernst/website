@@ -40,7 +40,7 @@ export default function Home() {
 
 
                     </div>
-                    <div className='Content White'>
+                    <div className='Content White nopadding'>
                         <div style={{textAlign:'center'}}>
 
                             <span>Available on the</span> <br />
@@ -49,6 +49,7 @@ export default function Home() {
                         </div>
                     </div>
                     <div className='Content WithPadding'>
+                        <div className={'Highlight'}>Apps for Jira</div>
                         <a id='products'><div className={'Demo'}>
 
 
@@ -58,6 +59,14 @@ export default function Home() {
                                     <Box><h2>Journey Mapping<br /> for Jira</h2></Box>
                                 </Flex>
                             </Card></a>
+
+
+                        </div></a>
+                    </div>
+                    <div className={'Content White WithPadding'}>
+
+                        <div className={'Highlight'}>Apps for Confluence</div>
+                        <div className={'Demo'}>
                             <a href="/readconfirmations"><Card>
 
                                 <Flex>
@@ -78,8 +87,7 @@ export default function Home() {
                                     <Box><h2>Personal Dashboards<br /> for Confluence</h2></Box>
                                 </Flex>
                             </Card></a>
-
-                        </div></a>
+                        </div>
                     </div>
                 </main>
 

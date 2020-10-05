@@ -22,11 +22,14 @@ export default function Styles() {
                 color: rgb(10, 198, 255);
                 text-decoration: none;
             }
+            h1 {
+                font-weight: 500;
+            }
             .grid-container {
               min-height: 100vh;
               display: grid;
               grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
-              grid-template-rows: 100px 2.3fr 0.4fr;
+              grid-template-rows: 110px 2.3fr 0.2fr;
               gap: 0px 0px;
               grid-template-areas: "Header Header Header Header Header" "Main Main Main Main Main" "Footer Footer Footer Footer Footer";
               
@@ -87,16 +90,16 @@ export default function Styles() {
              }
             .Footer { 
                 grid-area: Footer;
-                background-color: white;
                 font-size: 1rem;
                 padding: 1rem;
                 text-align: center;
                 position: relative;
-                
-                color: #1D222D;
+                border-top: 1px solid white;
+                color: white;
+                background-color: #013373;
             }
             .Footer a {
-                color: #1D222D;
+                color: white;
             }
             .Footer a:hover {
                 color: rgb(10, 198, 255);
@@ -108,6 +111,7 @@ export default function Styles() {
             .Main { 
                 grid-area: Main;
                 font-weight: 300;
+                padding: 0;
             }
             ul.standard {
                 padding: 0;
@@ -139,18 +143,22 @@ export default function Styles() {
                 align-items: center;
                 font-size: 1rem;
                 justify-content: center;
-                padding: 1rem 1rem 1rem 1rem;
-                
-                background-color: #eee;
+                padding: 1rem 1rem 5rem 1rem;
+                margin:0;
+                background-color: #f9f9f9;
                 color: #1D222D;
             }
             .White {
                 background-color: #ffffff;
                 color: #1D222D;
             }
+            .Content a {
+                color: #1D222D;
+            }
             .WithPadding {
+                flex-direction: column;
                 
-                padding: 4rem 1rem 4rem 1rem;
+                padding: 2rem 1rem 5rem 1rem;
             }
             .Document {
                 font-size: 1rem;
@@ -194,17 +202,40 @@ export default function Styles() {
                 font-size: 2.4rem;
                 font-weight: 300;
                  color: #1D222D;
+                 margin-bottom: 20px;
             }
             .flex {
                 display: flex;
                 justify-content: center;
                 flex-direction: row;
             }
+            .start {
+                justify-content: flex-start;
+            }
+            .start div {
+                padding: 15px 5px 10px 5px;
+            }
             .half {
                flex-grow: 1;
                flex-shrink: 1;
                flex-basis: 0%;
                padding: 30px;
+            }
+            .blog {
+                width: 60%;
+                justify-content: flex-start;
+            }
+            .blog_content {
+                flex-direction: column;
+            }
+            .FullPage {
+                min-height: 89vh;
+                padding-top: 10%;
+                align-items: flex-start;
+            }
+            .text {
+                font-size: 1.1rem;
+                max-width: 1140px;
             }
             .container {
                 max-width: 1140px;
@@ -221,12 +252,17 @@ export default function Styles() {
             .Hero div {
                 padding: 0.4rem;
             }
+            .nopadding {
+                padding: 1rem;
+            }
+            
             nav {
                 font-size: 1rem;
                 max-width: 65%;
                 padding-top: 0.5rem;
-                display: flex;
+                
                 margin: auto;
+                display: flex;
                 justify-content: space-between;
                 align-items: center;
             }
@@ -256,6 +292,9 @@ export default function Styles() {
                   }
                   .flex {
                     flex-direction: column;
+                  }
+                  .blog {
+                    width: 90%;
                   }
                   .Demo {
                     flex-direction: column;

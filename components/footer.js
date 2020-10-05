@@ -18,7 +18,7 @@ export default function Footer() {
                            target="_blank">Support</a>
                     </li>
                     <li>
-                        <Link href="/privacy">
+                        <Link href="/contact">
                             <a>Imprint</a>
                         </Link>
                     </li>
@@ -26,7 +26,11 @@ export default function Footer() {
             </nav>
             <br/>
 
-            &copy; 2020 Realigned Technologies Ltd<br/><br />
+            <div className={'flex'}><img src="/Swiss.svg" style={{width:24}} /> <div>&nbsp;&nbsp; Software made in Switzerland</div></div>
+            <br />
+
+            &copy; 2020 Realigned Technologies Ltd<br/>
+
         </footer>
     )
 }
