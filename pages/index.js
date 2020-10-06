@@ -63,7 +63,7 @@ export default function Home() {
                             <a href="/personas"><Card>
                                 <Flex>
                                     <Box><img src='psIcon.webp' alt="Personas Icon" style={{width:iconWidth}} /></Box>
-                                    <Box><h2>Personas<br /> for Jira</h2></Box>
+                                    <Box><h2>Persona Manager<br /> for Jira</h2></Box>
                                 </Flex>
                             </Card></a>
 
