@@ -6,7 +6,7 @@ export default function HeroButton({button1, button2}) {
         <>
             <style jsx>{`
       button {
-        background-color: #3699F2;
+        background-color: #1774C8;
         color: white;
         border-radius: 3px;
         font-size: 1rem;
@@ -16,7 +16,7 @@ export default function HeroButton({button1, button2}) {
         cursor: pointer;
       }
       button:hover {
-        background: #318CDD;
+        background: #3699F2;
       }
     `}</style>
             <a href={button1.href} target={button1.isBlank ? "_blank" : ""} rel="noopener"><button>

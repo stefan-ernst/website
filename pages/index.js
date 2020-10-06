@@ -43,7 +43,8 @@ export default function Home() {
                         <div style={{textAlign:'center'}}>
 
                             <span>Available on the</span> <br />
-                            <a href="https://marketplace.atlassian.com/vendors/1213963/realigned-technologies-ltd" rel="noopener" target="_blank"><img className='MP' src='marketplace.svg' style={{marginTop:15}} alt="Visit Atlassian Marketplace" /></a>
+                            <a href="https://marketplace.atlassian.com/vendors/1213963/realigned-technologies-ltd" rel="noopener" target="_blank">
+                                <img className='MP' src='marketplace.svg' alt="Available on the Atlassian Marketplace" style={{marginTop:15}}  /></a>
 
                         </div>
                     </div>
