@@ -23,7 +23,7 @@ export default function Home() {
                     <div className='Hero'>
 
                         <div style={{paddingRight:20}}>
-                            <img src='jmIcon.png' alt="Journey Mapping Icon" style={{width:'5rem'}} />
+                            <img src='jmIcon.webp' alt="Journey Mapping Icon" style={{width:'5rem'}} />
                         </div>
                        <div >
                            <span className="animate__animated animate__fadeInUp">Journey Mapping for Jira</span>
@@ -54,7 +54,7 @@ export default function Home() {
 
                             <a href="/journeymapping"><Card>
                                 <Flex>
-                                    <Box><img src='jmIcon.png' alt="Journey Mapping Icon" style={{width:iconWidth}} /></Box>
+                                    <Box><img src='jmIcon.webp' alt="Journey Mapping Icon" style={{width:iconWidth}} /></Box>
                                     <Box><h2>Journey Mapping<br /> for Jira</h2></Box>
                                 </Flex>
                             </Card></a>
@@ -69,20 +69,20 @@ export default function Home() {
                             <a href="/readconfirmations"><Card>
 
                                 <Flex>
-                                    <Box><img src='rcIcon.png' alt="Read Confirmations Icon" style={{width:iconWidth}} /></Box>
+                                    <Box><img src='rcIcon.webp' alt="Read Confirmations Icon" style={{width:iconWidth}} /></Box>
                                     <Box><h2>Read Confirmations<br /> for Confluence</h2></Box>
                                 </Flex>
 
                             </Card></a>
                             <a href="/enhancedsharing"><Card>
                                 <Flex>
-                                    <Box><img src='ESIcon.png' alt="Enhanced Sharing Icon" style={{width:iconWidth}} /></Box>
+                                    <Box><img src='ESIcon.webp' alt="Enhanced Sharing Icon" style={{width:iconWidth}} /></Box>
                                     <Box><h2>Enhanced Sharing<br /> for Confluence</h2></Box>
                                 </Flex>
                             </Card></a>
                             <a href="/personaldashboards"><Card>
                                 <Flex>
-                                    <Box><img src='pdIcon.png' alt="Personal Dashboards Icon" style={{width:iconWidth}} /></Box>
+                                    <Box><img src='pdIcon.webp' alt="Personal Dashboards Icon" style={{width:iconWidth}} /></Box>
                                     <Box><h2>Personal Dashboards<br /> for Confluence</h2></Box>
                                 </Flex>
                             </Card></a>
