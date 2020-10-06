@@ -12,7 +12,6 @@ export default function Blog({posts}) {
             <div className='grid-container '>
                 <Nav />
                 <main className='Main'>
-                    <br/>
                     <div className={'Content'}>
 
                         <div style={{flexDirection:'column',justifyContent:'center'}}>
