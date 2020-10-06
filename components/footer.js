@@ -26,7 +26,7 @@ export default function Footer() {
             </nav>
             <br/>
 
-            <div className={'pureflex center'}><img src="/Swiss.svg" style={{width:24}} /> <div>&nbsp;&nbsp; Software made in Switzerland</div></div>
+            <div className={'pureflex center'}><img src="/Swiss.svg" alt="Swiss Flag Icon" style={{width:24}} /> <div>&nbsp;&nbsp; Software made in Switzerland</div></div>
             <br />
 
             &copy; 2020 Realigned Technologies Ltd<br/>

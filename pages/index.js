@@ -43,13 +43,13 @@ export default function Home() {
                         <div style={{textAlign:'center'}}>
 
                             <span>Available on the</span> <br />
-                            <a href="https://marketplace.atlassian.com/vendors/1213963/realigned-technologies-ltd" rel="noopener" target="_blank"><img class='MP' src='marketplace.svg' style={{marginTop:15}} alt="Atlassian Marketplace Logo" /></a>
+                            <a href="https://marketplace.atlassian.com/vendors/1213963/realigned-technologies-ltd" rel="noopener" target="_blank"><img className='MP' src='marketplace.svg' style={{marginTop:15}} alt="Visit Atlassian Marketplace" /></a>
 
                         </div>
                     </div>
                     <div className='Content WithPadding'>
                         <div className={'Highlight'}>Apps for Jira</div>
-                        <a id='products'><div className={'Demo'}>
+                        <span id='products'><div className={'Demo'}>
 
 
                             <a href="/journeymapping"><Card>
@@ -60,7 +60,7 @@ export default function Home() {
                             </Card></a>
 
 
-                        </div></a>
+                        </div></span>
                     </div>
                     <div className={'Content White WithPadding'}>
 
