@@ -1,7 +1,6 @@
 import Header from "../components/header";
 import Nav from "../components/nav";
 import Footer from "../components/footer";
-import { attributes, react as Contact } from '../_posts/contact.md';
 
 export default function () {
 
@@ -18,7 +17,7 @@ export default function () {
                             <div>
                             <h2>Contact</h2>
                             <br />
-                            <div className={'flex start'}>
+                            <div className={'pureflex start'}>
                                 <div><img src='/home.svg' style={{width:24}} /></div>
                             <div>Realigned Technologies ltd<br />
 
@@ -29,19 +28,19 @@ export default function () {
 
                             </div>
 
-                            <div className={'flex start'}>
+                            <div className={'pureflex start'}>
                                 <div><img src='/mail.svg' style={{width:24}} /></div>
                                 <div>info@realigned.ch</div>
                             </div>
 
-                            <div className={'flex start'}>
+                            <div className={'pureflex start'}>
                                 <div><img src='/globe.svg' style={{width:24}} /></div>
                                 <div><a href="https://realignedtechnologies.atlassian.net/servicedesk/customer/portals" target="_blank" rel="noopener">Help Center</a></div>
                             </div>
                             </div>
 
-                            <div>
-                                <img src="/marketplacepartner.png" style={{width:'80%',marginLeft:40}}/>
+                            <div className={'PartnerLogo'}>
+                                <img src="/marketplacepartner.png" style={{width:'80%'}}/>
                             </div>
 
                             <br />

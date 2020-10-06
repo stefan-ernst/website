@@ -67,10 +67,10 @@ export default function Styles() {
             #menu {
                 position: absolute;
                 width: 200px;
-                top: 50px;
+                top: 70px;
                 right: 0;
-                height: calc(100% - 50px);
-                background: #1A4970;
+                height: calc(100% - 70px);
+                background: #013373;
                 list-style-type: none;
                 -webkit-font-smoothing: antialiased;
                 z-index: 100;
@@ -204,6 +204,15 @@ export default function Styles() {
                  color: #1D222D;
                  margin-bottom: 20px;
             }
+            .PartnerLogo {
+                margin-left: 50px;
+            }
+            .pureflex {
+                display: flex;
+            }
+            .center {
+                justify-content: center;
+            }
             .flex {
                 display: flex;
                 justify-content: center;
@@ -212,6 +221,9 @@ export default function Styles() {
             .start {
                 justify-content: flex-start;
             }
+            .top {
+                align-items: flex-start !important;
+                }
             .start div {
                 padding: 15px 5px 10px 5px;
             }
@@ -229,7 +241,7 @@ export default function Styles() {
                 flex-direction: column;
             }
             .FullPage {
-                min-height: 89vh;
+                min-height: 80vh;
                 padding-top: 10%;
                 align-items: flex-start;
             }
@@ -289,6 +301,9 @@ export default function Styles() {
                   }
                   .Document {
                     padding: 0.5rem;
+                  }
+                  .PartnerLogo {
+                    margin-left: 0;
                   }
                   .flex {
                     flex-direction: column;

@@ -6,7 +6,7 @@ import matter from "gray-matter";
 import ReactMarkdown from "react-markdown";
 
 
-export default function Post({ markdownBody }) {
+export default function Post({ frontMatter, markdownBody }) {
 
     return (
         <>
@@ -15,8 +15,9 @@ export default function Post({ markdownBody }) {
                 <Nav />
 
                 <main className='Main'>
-                    <p className='Content FullPage'>
+                    <p className='Content FullPage' style={{paddingTop:50}}>
                         <div className={'flex text blog blog_content'}>
+                            <h2>{frontMatter.title}</h2>
                         <ReactMarkdown source={markdownBody} />
                         </div>
                     </p>

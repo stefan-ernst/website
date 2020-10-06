@@ -13,21 +13,24 @@ export default function Blog({posts}) {
                 <Nav />
                 <main className='Main'>
                     <br/>
+                    <div className={'Content'}>
+
+                        <div style={{flexDirection:'column',justifyContent:'center'}}>
                     {!posts && <div>No posts!</div>}
                     {posts &&
                     posts.map((post, index) => {
                         return (
-                            <div className={'Content'} key={post.slug}>
-                                <div className={'flex container blog'}>
-                                <div className={'half'}> <img src={post.coverImage} style={{width:'100%'}} /></div>
+                                <div className={'flex container top'}>
+                                    <div className={'half image'}> <img src={post.coverImage} style={{width:'100%'}} /></div>
                                     <div className={'half'}>
-                                        <span><Link href={`/posts/${post.slug}`}><a>{post.title}</a></Link></span><br />
+                                        <span className={'Subtext'}><Link href={`/posts/${post.slug}`}><a>{post.title}</a></Link></span><br />
                                         <small>{post.excerpt}</small></div>
                                 </div>
-                            </div>
+
                         )
                     })}
-
+                        </div>
+                    </div>
                 </main>
 
                 <Footer />
