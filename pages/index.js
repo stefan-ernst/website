@@ -55,14 +55,14 @@ export default function Home() {
 
                             <a href="/journeymapping"><Card>
                                 <Flex>
-                                    <Box><img src='jmIcon.webp' alt="Journey Mapping Icon" style={{width:iconWidth}} /></Box>
+                                    <Box><img src='journeyMapsGreen.png' alt="Journey Mapping Icon" style={{width:iconWidth}} /></Box>
                                     <Box><h2>Journey Mapping<br /> for Jira</h2></Box>
                                 </Flex>
                             </Card></a>
 
                             <a href="/personas"><Card>
                                 <Flex>
-                                    <Box><img src='psIcon.webp' alt="Personas Icon" style={{width:iconWidth}} /></Box>
+                                    <Box><img src='personasGreen.png' alt="Personas Icon" style={{width:iconWidth}} /></Box>
                                     <Box><h2>Persona Manager<br /> for Jira</h2></Box>
                                 </Flex>
                             </Card></a>
