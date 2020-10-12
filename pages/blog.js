@@ -12,14 +12,14 @@ export default function Blog({posts}) {
             <div className='grid-container '>
                 <Nav />
                 <main className='Main'>
-                    <div className={'Content'}>
+                    <div className={'Content FullPage'}>
 
                         <div style={{flexDirection:'column',justifyContent:'center'}}>
                     {!posts && <div>No posts!</div>}
                     {posts &&
                     posts.map((post, index) => {
                         return (
-                                <div className={'flex container top'}>
+                                <div className={'flex container top'} key={index}>
                                     <div className={'half image'}> <img src={post.coverImage} style={{width:'100%'}} /></div>
                                     <div className={'half'}>
                                         <span className={'Subtext'}><Link href={`/posts/${post.slug}`}><a>{post.title}</a></Link></span><br />
