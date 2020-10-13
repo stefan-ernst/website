@@ -2,47 +2,86 @@ import Header from "../components/header";
 import Nav from "../components/nav";
 import Footer from "../components/footer";
 import HeroButton from "../components/HeroButton";
-import Button from "../components/Button";
+import FooterHero from "../components/FooterHero";
 
-export default function EnhancedSharing({posts}) {
+const Flex = props => (<div style={{display:'flex'}}>{props.children}</div>);
+const Box = props => (<div style={{padding:10}}>{props.children}</div>);
+
+const iconWidth = 80;
+
+export default function EnhancedSharing() {
 
     return (
         <>
-            <Header />
-            <div className='grid-container '>
-                <Nav />
+            <Header/>
+            <div className='grid-container'>
+                <Nav/>
+
+                <Footer />
+
                 <main className='Main'>
-                    <div className='Hero'>
-                        <img src='esIcon.png' className='pluginIcon'  /> <div style={{textAlign:'left'}}>Enhanced Sharing for Confluence</div>
-                    </div>
-                    <br/>
-                    <div className='Document'>
+                    <div className='Hero' style={{flexDirection:'column',alignItems:'center'}}>
 
-                    <div className='Demo'>
-                        <div className='DemoNav'>
-                            <ul className='standard'>
-                                <li>
-                                    Overview
-                                </li>
-                                <li>
-                                    Documentation
-                                </li>
-                                <li>
-                                    <Button>Try free</Button>
-                                </li>
-                            </ul>
-                        </div>
-                        <div className='DemoContent'>
-                            <h1>Keep track of the pages you share</h1>
-                        </div>
-                    </div>
+                        Don't lose track of the pages you share
+                        <br />
+                        <small>Keep everything under control - especially when sharing to larger groups</small>
+
+                        <img src='ES3.png' style={{marginTop: 50, marginBottom: 40, width:'80%',maxWidth:800}}
+                             alt="Enhanced Sharing Screenshot"/>
+
 
                     </div>
+
+
+                    <div className='Content White' style={{flexDirection:'column'}}>
+
+                        <div className={'flex container'}>
+                            <div className={'half'}><span className='Highlight'>Works seamlessly with Confluence</span><br />
+                                <span>We integrate behind the scenes, so you can use Confluence's native sharing dialog and invite
+                                people to work on the same document - just as before.</span>
+                            </div>
+                            <div className={'half'}>
+                                <img src='ES1.png' style={{marginTop: 50,width:'60%',maxWidth:500}}
+                                     alt="Journey Mapping Screenshot"/>
+                            </div>
+                        </div>
+
+                    </div>
+
+                    <div className='Content' style={{flexDirection:'column'}}>
+                        <div className={'flex container'}>
+
+                            <div className={'half'}>
+                                <img src='ES2.png' style={{marginTop: 50,width:'100%',maxWidth:800}}
+                                     alt="Journey Mapping Screenshot"/>
+                            </div>
+                            <div className={'half'}><span className='Highlight'>See your shared pages in your user profile </span><br />
+                                <span>So you can be sure the information has been delivered safe and sound</span>
+                            </div>
+                        </div>
+
+                    </div>
+
+                    <div className='Content White' style={{flexDirection:'column'}}>
+
+                        <div className={'flex container'}>
+                            <div className={'half'}><span className='Highlight'>As an admin -<br /> be always in control</span><br />
+                                <span>See what users have shared - inside and outside of your organisation</span>
+                            </div>
+                            <div className={'half'}>
+                                <img src='ES3.png' style={{marginTop: 50,width:'100%',maxWidth:800}}
+                                     alt="Journey Mapping Screenshot"/>
+                            </div>
+                        </div>
+
+                    </div>
+
+                    <FooterHero docUrl="https://docz.realignedtechnologies.com/enhancedsharing" url="https://marketplace.atlassian.com/1219996" />
+
 
                 </main>
 
-                <Footer />
             </div>
-        </>
-    );
+        </>);
+
 }

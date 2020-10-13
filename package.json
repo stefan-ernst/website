@@ -9,7 +9,12 @@
     "export": "next export"
   },
   "dependencies": {
+    "@chakra-ui/core": "^0.8.0",
+    "@emotion/core": "^10.0.35",
+    "@emotion/styled": "^10.0.27",
     "animate.css": "^4.1.0",
+    "dokz": "^1.0.79",
+    "emotion-theming": "^10.0.27",
     "gray-matter": "^4.0.2",
     "imagemin-optipng": "^8.0.0",
     "jimp": "^0.16.0",

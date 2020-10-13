@@ -158,7 +158,7 @@ export default function Styles() {
             .WithPadding {
                 flex-direction: column;
                 
-                padding: 2rem 1rem 5rem 1rem;
+                padding: 2.5rem 1rem 5rem 1rem;
             }
             .Document {
                 font-size: 1rem;

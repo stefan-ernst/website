@@ -1,10 +1,9 @@
-import {useState} from "react";
 import Header from "../components/header";
-import Menu from "../components/menu";
 import Nav from "../components/nav";
 import Footer from "../components/footer";
 import HeroButton from "../components/HeroButton";
 import Card from "../components/card";
+import Link from "next/link";
 
 const Flex = props => (<div style={{display:'flex'}}>{props.children}</div>);
 const Box = props => (<div style={{padding:10}}>{props.children}</div>);
@@ -53,19 +52,19 @@ export default function Home() {
                         <span id='products'><div className={'Demo'}>
 
 
-                            <a href="/journeymapping"><Card>
+                            <Link href="/journeymapping"><a><Card>
                                 <Flex>
                                     <Box><img src='jmIcon.webp' alt="Journey Mapping Icon" style={{width:iconWidth}} /></Box>
                                     <Box><h2>Journey Mapping<br /> for Jira</h2></Box>
                                 </Flex>
-                            </Card></a>
+                            </Card></a></Link>
 
-                            <a href="/personas"><Card>
+                            <Link href="/personas"><a><Card>
                                 <Flex>
                                     <Box><img src='psIcon.webp' alt="Personas Icon" style={{width:iconWidth}} /></Box>
                                     <Box><h2>Persona Manager<br /> for Jira</h2></Box>
                                 </Flex>
-                            </Card></a>
+                            </Card></a></Link>
 
 
                         </div></span>
@@ -74,26 +73,26 @@ export default function Home() {
 
                         <div className={'Highlight'}>Apps for Confluence</div>
                         <div className={'Demo'}>
-                            <a href="/readconfirmations"><Card>
+                            <Link href="/readconfirmations"><a><Card>
 
                                 <Flex>
                                     <Box><img src='rcIcon.webp' alt="Read Confirmations Icon" style={{width:iconWidth}} /></Box>
                                     <Box><h2>Read Confirmations<br /> for Confluence</h2></Box>
                                 </Flex>
 
-                            </Card></a>
-                            <a href="/enhancedsharing"><Card>
+                            </Card></a></Link>
+                            <Link href="/enhancedsharing"><a><Card>
                                 <Flex>
                                     <Box><img src='ESIcon.webp' alt="Enhanced Sharing Icon" style={{width:iconWidth}} /></Box>
                                     <Box><h2>Enhanced Sharing<br /> for Confluence</h2></Box>
                                 </Flex>
-                            </Card></a>
-                            <a href="/personaldashboards"><Card>
+                            </Card></a></Link>
+                            <Link href="/personaldashboards"><a><Card>
                                 <Flex>
                                     <Box><img src='pdIcon.webp' alt="Personal Dashboards Icon" style={{width:iconWidth}} /></Box>
                                     <Box><h2>Personal Dashboards<br /> for Confluence</h2></Box>
                                 </Flex>
-                            </Card></a>
+                            </Card></a></Link>
                         </div>
                     </div>
                 </main>
