@@ -4,6 +4,7 @@ import Menu from "../components/menu";
 import Nav from "../components/nav";
 import Footer from "../components/footer";
 import HeroButton from "../components/HeroButton";
+import FooterHero from "../components/FooterHero";
 
 const Flex = props => (<div style={{display:'flex'}}>{props.children}</div>);
 const Box = props => (<div style={{padding:10}}>{props.children}</div>);
@@ -78,18 +79,7 @@ export default function JourneyMapping() {
 
                     </div>
 
-                    <div className={'Content'}>
-                        <div className={'flex container'}>
-                            <div className={'half'}>
-                                <br />
-                                <span className={'Highlight'}>Available on the Atlassian Marketplace</span> <br />
-
-                                <br />
-                                <HeroButton button1={{title:'Try it free',href:'https://marketplace.atlassian.com/1223654',isBlank:true}}
-                                            button2={{title:'Documentation',href:'/docs/journeymapping'}}/>
-                            </div>
-                        </div>
-                    </div>
+                    <FooterHero docUrl="https://docz.realignedtechnologies.com/journeymapping" url="https://marketplace.atlassian.com/1223654" />
 
                 </main>
 
