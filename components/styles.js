@@ -33,7 +33,7 @@ export default function Styles() {
               gap: 0px 0px;
               grid-template-areas: "Header Header Header Header Header" "Main Main Main Main Main" "Footer Footer Footer Footer Footer";
               
-            background: url(/3d.png) top center no-repeat, linear-gradient( 154deg, rgb(1, 51, 115) 0%, rgb(20, 132, 188) 100%);
+            background: url(/background.webp) top center no-repeat, linear-gradient( 154deg, rgb(1, 51, 115) 0%, rgb(20, 132, 188) 100%);
             }
             .content {
               grid-template-areas: "Header Header Header Header Header" ". Main Main Main ." "Footer Footer Footer Footer Footer";
@@ -361,6 +361,7 @@ export default function Styles() {
                       grid-template-columns: 1fr;
                       grid-template-rows: 70px 1fr 120px;
                       gap: 0 0;
+                      background: linear-gradient( 154deg, rgb(1, 51, 115) 0%, rgb(20, 132, 188) 100%);
                       grid-template-areas: "Header" "Main" "Footer";
                     }
                   .menu {
