@@ -17,7 +17,7 @@ export default function Header({title, description}) {
                 <meta
                     name="og:title"
                     content={title}/>
-                <script async defer data-domain="realignedtechnologies.com" src="https://plausible.io/js/plausible.js"></script>
+                <script async defer data-domain="realignedtechnologies.com" src="https://collect.realignedtechnologies.com/js/index.js"></script>
             </Head>
             <style jsx>{`
             .container {
