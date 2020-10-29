@@ -1,5 +1,5 @@
 import Header from "../components/header";
-import Nav from "../components/nav";
+import Navigation from "../components/Navigation";
 import Footer from "../components/footer";
 
 export default function () {
@@ -8,7 +8,7 @@ export default function () {
         <>
             <Header description="Get in touch with us - Realigned Technologies" />
             <div className='grid-container'>
-                <Nav />
+                <Navigation />
 
                 <main className='Main'>
                     <p className='Content FullPage'>

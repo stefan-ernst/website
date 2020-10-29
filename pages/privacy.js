@@ -1,5 +1,5 @@
 import Header from "../components/header";
-import Nav from "../components/nav";
+import Navigation from "../components/Navigation";
 import Footer from "../components/footer";
 import { attributes, react as Privacy } from '../_posts/privacy.md';
 
@@ -9,7 +9,7 @@ export default function Blog() {
         <>
             <Header description="Privacy Policy for Realigned Technologies website and apps" />
             <div className='grid-container'>
-                <Nav />
+                <Navigation />
 
                 <main className='Main'>
                     <p className='Content'>

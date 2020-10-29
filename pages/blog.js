@@ -1,5 +1,5 @@
 import Header from "../components/header";
-import Nav from "../components/nav";
+import Navigation from "../components/Navigation";
 import Footer from "../components/footer";
 import Link from "next/link";
 import matter from "gray-matter";
@@ -13,7 +13,7 @@ export default function Blog({posts}) {
             <Header description="Realigned Technologies Blog - learn about all things Atlassian" />
             <BlogStyle />
             <div className='grid-container '>
-                <Nav />
+                <Navigation />
                 <main className='Main'>
                     <div className={'Content FullPage'}>
 

@@ -9,7 +9,7 @@ export default function BlogStyle() {
                     width: auto;
                     border: 1px solid lightgrey;
                     border-radius: 10px;
-                    min-width: 400px;
+                    min-width: 300px;
                     background-color: white;
                     box-shadow: 0 0 1px 0 rgba(0,0,0,0.08), 0 1px 1px 0 rgba(0,0,0,0.08), 0 4px 8px 0 rgba(0,0,0,0.08);
                 }
@@ -25,7 +25,6 @@ export default function BlogStyle() {
                 }
                 .Excerpt {
                     padding: 2rem;
-                    font-size: 1.1rem;
                     font-weight: 300;
                 }
                 h2 {
@@ -33,8 +32,7 @@ export default function BlogStyle() {
                     margin-bottom: 10px;
                 }
                 h2.title {
-                    font-weight: 800;
-                    font-size: 2.2rem;
+                    font-weight: 500;
                 }
                 a {
                     color: #013373;

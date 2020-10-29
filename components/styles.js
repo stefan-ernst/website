@@ -36,9 +36,6 @@ export default function Styles() {
               grid-template-areas: "Header Header Header Header Header" ". Main Main Main ." "Footer Footer Footer Footer Footer";
             }
             
-            
-             
-             
             .Header { 
                  grid-area: Header;
                 
@@ -68,7 +65,6 @@ export default function Styles() {
             }
             .Main { 
                 grid-area: Main;
-                font-weight: 300;
                 padding: 0;
             }
             ul.standard {
@@ -130,9 +126,6 @@ export default function Styles() {
             }
             .Blue {
                 background-color: rgba(43,147,228,1);
-            }
-            .Logo {
-                width: 14rem;
             }
             .Hero {
                 position: relative;
@@ -207,7 +200,6 @@ export default function Styles() {
             }
             .FullPage {
                 min-height: 80vh;
-                padding-top: 10%;
                 align-items: flex-start;
             }
             .text {
@@ -245,6 +237,7 @@ export default function Styles() {
                 list-style: none;
                 display: flex;
                 padding-left: 0;
+                margin-left: 0;
             }
             nav li {
                 padding: 0.5rem;
@@ -325,12 +318,11 @@ export default function Styles() {
                   html, body {
                       min-height: 100%;
                       min-height: -webkit-fill-available;
-                      
                   }
                   .grid-container {
                       display: grid;
                       grid-template-columns: 1fr;
-                      grid-template-rows: 85px 1fr 120px;
+                      grid-template-rows: 100px 1fr 150px;
                       gap: 0 0;
                       grid-template-areas: "Header" "Main" "Footer";
                     }

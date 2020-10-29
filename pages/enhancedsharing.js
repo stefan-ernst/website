@@ -1,5 +1,5 @@
 import Header from "../components/header";
-import Nav from "../components/nav";
+import Navigation from "../components/Navigation";
 import Footer from "../components/footer";
 import HeroButton from "../components/HeroButton";
 import FooterHero from "../components/FooterHero";
@@ -23,7 +23,7 @@ export default function EnhancedSharing() {
                 `}
             </style>
             <div className='grid-container'>
-                <Nav/>
+                <Navigation/>
 
                 <Footer />
 

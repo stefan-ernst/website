@@ -1,5 +1,5 @@
 import Header from "../components/header";
-import Nav from "../components/nav";
+import Navigation from "../components/Navigation";
 import Footer from "../components/footer";
 import HeroButton from "../components/HeroButton";
 import Card from "../components/card";
@@ -16,7 +16,7 @@ export default function Home() {
         <>
             <Header description="Next gen apps for Jira & Confluence. Realigned Technologies is building UX design and collaboration tools" />
             <div className='grid-container'>
-                <Nav />
+                <Navigation />
 
                 <main className='Main'>
                     <div className='Hero'>

@@ -1,4 +1,4 @@
-import {Items} from "./nav";
+import {Items} from "./Navigation";
 
 export default function Menu({open, setOpen}) {
 
@@ -60,6 +60,10 @@ export default function Menu({open, setOpen}) {
                     padding-left: 20px;
                     padding-bottom: 10px;
                     flex-direction: column;
+                    margin-top: 40px;
+                }
+                .mobilemenu li {
+                    margin: 4px;
                 }
                 `}
             </style>

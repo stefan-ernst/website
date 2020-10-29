@@ -1,6 +1,6 @@
 import { useRouter } from 'next/router'
 import Header from '../../components/header'
-import Nav from "../../components/nav";
+import Navigation from "../../components/Navigation";
 import Footer from "../../components/footer";
 import matter from "gray-matter";
 import ReactMarkdown from "react-markdown";
@@ -15,7 +15,7 @@ export default function Post({ frontMatter, markdownBody }) {
             <Header title={frontMatter.title} description={frontMatter.excerpt} />
             <BlogStyle />
             <div className='grid-container'>
-                <Nav />
+                <Navigation />
 
                 <main className='Main'>
                     <p className='Content FullPage' style={{paddingTop:50}}>
@@ -24,7 +24,7 @@ export default function Post({ frontMatter, markdownBody }) {
                             <h2 className={'title'}>{frontMatter.title}</h2><br />
                             <div style={{marginBottom:20}}>By {frontMatter.author.name}</div>
 
-                            <div className={'CoverImage'} style={{backgroundImage:`url(${frontMatter.coverImage})`}}>
+                            <div className={'CoverImage'} style={{marginBottom:20,backgroundImage:`url(${frontMatter.coverImage})`}}>
 
                             </div>
                             <span>

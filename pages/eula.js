@@ -1,5 +1,5 @@
 import Header from "../components/header";
-import Nav from "../components/nav";
+import Navigation from "../components/Navigation";
 import Footer from "../components/footer";
 import { attributes, react as Eula } from '../_posts/eula.md';
 
@@ -9,7 +9,7 @@ export default function Blog() {
         <>
             <Header description="End user license agreement for Realigned Technologies apps" />
             <div className='grid-container content'>
-                <Nav />
+                <Navigation />
 
                 <main className='Main'>
                     <div className='Document'>

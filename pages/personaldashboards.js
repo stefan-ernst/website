@@ -1,5 +1,5 @@
 import Header from "../components/header";
-import Nav from "../components/nav";
+import Navigation from "../components/Navigation";
 import Footer from "../components/footer";
 import HeroButton from "../components/HeroButton";
 import FooterHero from "../components/FooterHero";
@@ -16,7 +16,7 @@ export default function PersonalDashboards() {
         <>
             <Header description="Personalize your Confluence dashboards with the Personal Dashboards for Confluence - free of charge on the Atlassian Marketplace" />
             <div className='grid-container'>
-                <Nav/>
+                <Navigation/>
 
                 <Footer />
 

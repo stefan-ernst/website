@@ -1,7 +1,7 @@
 import {useState} from "react";
 import Header from "../components/header";
 import Menu from "../components/menu";
-import Nav from "../components/nav";
+import Navigation from "../components/Navigation";
 import Footer from "../components/footer";
 import HeroButton from "../components/HeroButton";
 import FooterHero from "../components/FooterHero";
@@ -20,7 +20,7 @@ export default function JourneyMapping() {
             <Header description="Journey Mapping for Jira - put your customer journeys right into Jira. Available on the Atlassian Marketplace" />
 
             <div className='grid-container'>
-                <Nav/>
+                <Navigation/>
 
                 <Footer />
 

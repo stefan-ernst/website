@@ -10,12 +10,20 @@ export const Items = () => (
     </ul>
 )
 
-export default function Nav() {
+export default function Navigation() {
 
     const [menuOpen, setMenuOpen] = useState(false);
 
     return (
         <header className='Header'>
+            <style jsx>
+                {`
+                .Logo {
+                    width: 14rem;
+                    margin-bottom: 0;
+                }
+                `}
+            </style>
             <nav role="navigation" aria-label="Main">
                 <Link href="/"><a><img src="/Realigned_Single.svg" alt="Realigned Logo"
                         className='Logo'/></a></Link>

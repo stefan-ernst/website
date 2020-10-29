@@ -1,7 +1,7 @@
 import {useState} from "react";
 import Header from "../components/header";
 import Menu from "../components/menu";
-import Nav from "../components/nav";
+import Navigation from "../components/Navigation";
 import Footer from "../components/footer";
 import HeroButton from "../components/HeroButton";
 import FooterHero from "../components/FooterHero";
@@ -17,7 +17,7 @@ export default function ReadConfirmations() {
         <>
             <Header description="Get your team on the same page with Read Confirmations for Confluence" />
             <div className='grid-container'>
-                <Nav/>
+                <Navigation/>
 
                 <Footer />
 
