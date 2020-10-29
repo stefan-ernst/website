@@ -7,7 +7,7 @@ export default function Blog() {
 
     return (
         <>
-            <Header />
+            <Header description="Privacy Policy for Realigned Technologies website and apps" />
             <div className='grid-container'>
                 <Nav />
 

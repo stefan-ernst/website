@@ -7,10 +7,7 @@ export default function Styles() {
             }
             body {
               margin: 0;
-              font-family: "Source Sans Pro", -apple-system, BlinkMacSystemFont, Segoe UI, Roboto,
-                Oxygen, Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue,
-                sans-serif;
-              background-color: #f5f5f5;
+              background-color: rgba(250,250,250,1);
               padding: 0;
               color: white;
             }
@@ -33,7 +30,7 @@ export default function Styles() {
               gap: 0px 0px;
               grid-template-areas: "Header Header Header Header Header" "Main Main Main Main Main" "Footer Footer Footer Footer Footer";
               
-            background: url(/3d.png) top center no-repeat, linear-gradient( 154deg, rgb(1, 51, 115) 0%, rgb(20, 132, 188) 100%);
+              background: url(/3d.png) top center no-repeat, linear-gradient( 154deg, rgb(1, 51, 115) 0%, rgb(20, 132, 188) 100%);
             }
             .content {
               grid-template-areas: "Header Header Header Header Header" ". Main Main Main ." "Footer Footer Footer Footer Footer";
@@ -41,56 +38,14 @@ export default function Styles() {
             
             
              
-             #menuToggle {
-             cursor: pointer;
-             display: none;
-             }
-             #menuToggle span {
-              display: block;
-              width: 33px;
-              height: 4px;
-              margin-bottom: 5px;
-              position: relative;
-              
-              background: #fff;
-              border-radius: 3px;
-              
-              z-index: 1;
-              
-              transform-origin: 4px 0px;
-              
-              transition: transform 0.5s cubic-bezier(0.77,0.2,0.05,1.0),
-                          background 0.5s cubic-bezier(0.77,0.2,0.05,1.0),
-                          opacity 0.55s ease;
-            }
-            
-            #menu {
-                position: absolute;
-                width: 200px;
-                top: 70px;
-                right: 0;
-                height: calc(100% - 70px);
-                background: #013373;
-                list-style-type: none;
-                -webkit-font-smoothing: antialiased;
-                z-index: 100;
-            }
-            #menu ul {
-                list-style: none;
-                display: block;
-                padding-left: 20px;
-                padding-bottom: 10px;
-            }
+             
             .Header { 
                  grid-area: Header;
-                
-                 font-size: 0.9rem;
                  padding: 0.5rem;
                  padding-top: 1rem;
              }
             .Footer { 
                 grid-area: Footer;
-                font-size: 1rem;
                 padding: 1rem;
                 text-align: center;
                 position: relative;
@@ -110,7 +65,7 @@ export default function Styles() {
             }
             .Main { 
                 grid-area: Main;
-                font-weight: 300;
+                font-weight: 400;
                 padding: 0;
             }
             ul.standard {
@@ -141,19 +96,19 @@ export default function Styles() {
             .Content {
                 display: flex;
                 align-items: center;
-                font-size: 1rem;
                 justify-content: center;
-                padding: 1rem 1rem 5rem 1rem;
+                padding: 1rem 1rem 2rem 1rem;
                 margin:0;
-                background-color: #f9f9f9;
-                color: #1D222D;
+                background-color: rgba(250,250,250,1);
+
+                color: #6b7280;
+            }
+            h1,h2,h3,h4,h5,h6 {
+                color: rgba(22,30,46,1);
+                line-height: 1.5;
             }
             .White {
                 background-color: #ffffff;
-                color: #1D222D;
-            }
-            .Content a {
-                color: #1D222D;
             }
             .WithPadding {
                 flex-direction: column;
@@ -161,7 +116,6 @@ export default function Styles() {
                 padding: 2.5rem 1rem 5rem 1rem;
             }
             .Document {
-                font-size: 1rem;
                 color: #1D222D;
                 padding: 1rem 3rem 1rem 3rem;
                 text-align: justify;
@@ -181,7 +135,7 @@ export default function Styles() {
                 position: relative;
                 box-sizing: border-box;
                 display: flex;
-                align-items: top;
+                align-items: flex-start;
                 font-size: 2.2rem;
                 justify-content: center;
                 font-weight: 300;
@@ -189,20 +143,20 @@ export default function Styles() {
                 
             }
             .Hero small {
-                font-size: 1.2rem;
             }
             .Hero a {
                 font-weight: 500;
             }  
-            .Hero .minor {
-                font-size: 1.8rem;
+            .Hero .Minor {
                 text-align: center;
             }
             .Highlight {
-                font-size: 2.4rem;
                 font-weight: 300;
                  color: #1D222D;
-                 margin-bottom: 20px;
+                 margin-bottom: 10px;
+            }
+            .Hero .Highlight {
+                color: white;
             }
             .PartnerLogo {
                 margin-left: 50px;
@@ -213,10 +167,17 @@ export default function Styles() {
             .center {
                 justify-content: center;
             }
+            .middle {
+                align-items: center;
+            }
             .flex {
                 display: flex;
                 justify-content: center;
                 flex-direction: row;
+            }
+            .sflex {
+                display: flex;
+                justify-content: center;
             }
             .start {
                 justify-content: flex-start;
@@ -230,7 +191,7 @@ export default function Styles() {
             .half {
                flex-grow: 1;
                flex-shrink: 1;
-               flex-basis: 0%;
+               flex-basis: 0;
                padding: 30px;
             }
             .blog {
@@ -246,13 +207,11 @@ export default function Styles() {
                 align-items: flex-start;
             }
             .text {
-                font-size: 1.1rem;
                 max-width: 1140px;
             }
             .container {
                 max-width: 1140px;
                 align-items: center;
-                font-size: 1.3rem;
             }
             .Shadow {
                 box-shadow: 0 0 1px 0 rgba(0,0,0,0.08), 0 1px 1px 0 rgba(0,0,0,0.08), 0 4px 8px 0 rgba(0,0,0,0.08);
@@ -269,7 +228,7 @@ export default function Styles() {
             }
             
             nav {
-                font-size: 1rem;
+           
                 max-width: 65%;
                 padding-top: 0.5rem;
                 
@@ -281,7 +240,7 @@ export default function Styles() {
             nav ul {
                 list-style: none;
                 display: flex;
-                padding-left: 0px;
+                padding-left: 0;
             }
             nav li {
                 padding: 0.5rem;
@@ -294,9 +253,17 @@ export default function Styles() {
             .Footer nav {
                 display: inline-block;
             }
+            nav a {
+                color: white;
+                text-decoration: none;
+            }
+            nav a:hover {
+                color: rgb(10, 198, 255);
+                text-decoration: none;
+            }
               @media only screen and (max-width: 1000px){
-                  .Main { grid-area: Main;
-                    font-size: 1.5rem;
+                  .Main { 
+                    grid-area: Main;
                     min-height: 900px;
                   }
                   .Document {
@@ -316,7 +283,7 @@ export default function Styles() {
                     padding: 0;
                   }
                   .DemoNav {
-                    border-right: 0px;
+                    border-right: 0;
                     padding: 0 1rem 0 1rem;
                     text-align: center;
                     width: 100%;
@@ -330,15 +297,12 @@ export default function Styles() {
                   .Hero:after {
                     display: none;
                   }
-                  .MP {
-                    display: none;
-                  }
                   .pluginIcon {
                     width: 7rem;
                     margin-right: 10px;
                   }
                   .Logo {
-                    width: 8rem;
+                    width: 10rem;
                   }
                   .Products {
                     flex-direction: column;
@@ -346,20 +310,22 @@ export default function Styles() {
                   .Hero {
                   text-align: center;
                   padding: 3rem 1rem 3rem 1rem;
-                  font-size: 2rem;
+                  }
+                  .half {
+                    padding-bottom: 0;
                   }
                   nav {
-                  max-width: 100%;
+                    max-width: 100%;
+                    padding: 5px;
                   }
                   html, body {
                       min-height: 100%;
                       min-height: -webkit-fill-available;
-                      
                   }
                   .grid-container {
                       display: grid;
                       grid-template-columns: 1fr;
-                      grid-template-rows: 70px 1fr 120px;
+                      grid-template-rows: 85px 1fr 120px;
                       gap: 0 0;
                       grid-template-areas: "Header" "Main" "Footer";
                     }

@@ -3,27 +3,32 @@ import Nav from "../components/nav";
 import Footer from "../components/footer";
 import Link from "next/link";
 import matter from "gray-matter";
+import BlogStyle from "../components/Blog/style";
 
 export default function Blog({posts}) {
 
     return (
         <>
-            <Header />
+
+            <Header description="Realigned Technologies Blog - learn about all things Atlassian" />
+            <BlogStyle />
             <div className='grid-container '>
                 <Nav />
                 <main className='Main'>
                     <div className={'Content FullPage'}>
 
-                        <div style={{flexDirection:'column',justifyContent:'center'}}>
+                        <div className={'Flex'}>
                     {!posts && <div>No posts!</div>}
                     {posts &&
                     posts.map((post, index) => {
                         return (
-                                <div className={'flex container top'} key={index}>
-                                    <div className={'half image'}> <img src={post.coverImage} style={{width:'100%'}} /></div>
-                                    <div className={'half'}>
-                                        <span className={'Subtext'}><Link href={`/posts/${post.slug}`}><a>{post.title}</a></Link></span><br />
-                                        <small>{post.excerpt}</small></div>
+                                <div className={'Container'} key={index}>
+                                    <Link href={`/posts/${post.slug}`}><a><div style={{backgroundImage:`url(${post.coverImage})`}} className='CoverImage'></div></a></Link>
+                                    <div className='Excerpt'>
+                                        <Link href={`/posts/${post.slug}`}><a><h2>{post.title}</h2></a></Link>
+                                        <span>{post.excerpt}</span><br /><br />
+                                        <Link href={`/posts/${post.slug}`}><a>Continue reading</a></Link>
+                                    </div>
                                 </div>
 
                         )

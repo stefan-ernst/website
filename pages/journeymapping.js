@@ -5,6 +5,8 @@ import Nav from "../components/nav";
 import Footer from "../components/footer";
 import HeroButton from "../components/HeroButton";
 import FooterHero from "../components/FooterHero";
+import Link from "next/link";
+import Hero from "../components/Hero";
 
 const Flex = props => (<div style={{display:'flex'}}>{props.children}</div>);
 const Box = props => (<div style={{padding:10}}>{props.children}</div>);
@@ -15,36 +17,29 @@ export default function JourneyMapping() {
 
     return (
         <>
-            <Header/>
+            <Header description="Journey Mapping for Jira - put your customer journeys right into Jira. Available on the Atlassian Marketplace" />
+
             <div className='grid-container'>
                 <Nav/>
 
                 <Footer />
 
                 <main className='Main'>
-                    <div className='Hero' style={{flexDirection:'column',alignItems:'center'}}>
-
-                        Connect user requirements to your Jira issues
-                        <br />
-                        <small>Get to know your users - and communicate user requirements more easily to your team</small>
-
-                        <img src='JM1.png' style={{marginTop: 50, marginBottom: 40, width:'80%',maxWidth:800}}
-                             alt="Journey Mapping Screenshot"/>
-
-
-                        <div className='minor'>Want to learn more about Journey Mapping?<br /> Read the UX design series on our <a href='/blog'>Blog</a></div>
-
-                    </div>
+                    <Hero image={<img src='jm/JM3.png' loading="lazy" style={{marginTop: 50, marginBottom: 40, width:'80%',maxWidth:800}}
+                                      alt="Journey Mapping Screenshot"/>}
+                          subtitle="Connect user requirements to your Jira issues"
+                          title="Bring User Experience Design to Jira"
+                          subtext={<>Want to learn more about Journey Mapping?<br /> <Link href='/blog'><a>Read the UX design series on our Blog</a></Link></>} />
 
 
                     <div className='Content White' style={{flexDirection:'column'}}>
 
                         <div className={'flex container'}>
                         <div className={'half'}><span className='Highlight'>Create unlimited journey maps right within your Jira projects</span><br />
-                            <span>Research user's interactions with your product or service. Get a detailed understanding about their wants and needs.</span>
+                            <span>Document customer interactions with your product or service. Get a detailed understanding about their wants and needs.</span>
                         </div>
                             <div className={'half'}>
-                        <img src='JM2.png' style={{marginTop: 50,width:'100%',maxWidth:800}}
+                        <img src='jm/JM2.png' loading="lazy" style={{marginTop: 50,width:'100%',maxWidth:800}}
                              alt="Journey Mapping Screenshot"/>
                         </div>
                         </div>
@@ -55,11 +50,11 @@ export default function JourneyMapping() {
                         <div className={'flex container'}>
 
                             <div className={'half'}>
-                                <img src='JM3.png' style={{marginTop: 50,width:'100%',maxWidth:800}}
+                                <img src='jm/JM1.png' loading="lazy" style={{marginTop: 50,width:'100%',maxWidth:800}}
                                      alt="Journey Mapping Screenshot"/>
                             </div>
                             <div className={'half'}><span className='Highlight'>Bring high level requirements into an understandable story format </span><br />
-                                <span>Break down complex requirements and make them more readable to your team</span>
+                                <span>Break down complex user journeys and make them more readable to your team</span>
                             </div>
                         </div>
 
@@ -69,17 +64,38 @@ export default function JourneyMapping() {
 
                         <div className={'flex container'}>
                             <div className={'half'}><span className='Highlight'>Manage personas alongside your user journeys</span><br />
-                                <span>Make your user journeys even more customer centric </span>
+                                <span>Connect your work-items to be much more customer centric </span>
                             </div>
                             <div className={'half'}>
-                                <img src='JM5.png' style={{marginTop: 50,width:'100%',maxWidth:800}}
+                                <img src='jm/JM4.png' loading="lazy" style={{marginTop: 50,width:'100%',maxWidth:800}}
                                      alt="Journey Mapping Screenshot"/>
                             </div>
                         </div>
 
                     </div>
 
-                    <FooterHero docUrl="https://docz.realignedtechnologies.com/journeymapping" url="https://marketplace.atlassian.com/1223654" />
+                    <div className='Content' style={{flexDirection:'column'}}>
+                        <div className={'flex container'}>
+
+                            <div className={'half'}>
+                                <div className='sflex middle'>
+                                <img src='server.svg' style={{margin: 15,width:'20%',maxWidth:400}}
+                                     alt="Journey Mapping Screenshot"/>
+                                    <img src='dc.svg' style={{margin: 15,width:'20%',maxWidth:400}}
+                                         alt="Journey Mapping Screenshot"/>
+                                <img src='cloud.svg' style={{margin: 15,width:'25%',maxWidth:400}}
+                                     alt="Journey Mapping Screenshot"/>
+
+                                </div>
+                            </div>
+                            <div className={'half'}><span className='Highlight'>Available for all Atlassian platforms </span><br />
+                                <span>Server available now - DC & Cloud right around the corner</span>
+                            </div>
+                        </div>
+
+                    </div>
+
+                    <FooterHero alternate docUrl="https://docz.realignedtechnologies.com/journeymapping" url="https://marketplace.atlassian.com/1223654" />
 
                 </main>
 

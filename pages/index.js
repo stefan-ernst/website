@@ -14,7 +14,7 @@ export default function Home() {
 
     return (
         <>
-            <Header />
+            <Header description="Next gen apps for Jira & Confluence. Realigned Technologies is building UX design and collaboration tools" />
             <div className='grid-container'>
                 <Nav />
 
@@ -59,12 +59,12 @@ export default function Home() {
                                 </Flex>
                             </Card></a></Link>
 
-                            <Link href="/personas"><a><Card>
+                            {false && <Link href="/personas"><a><Card>
                                 <Flex>
                                     <Box><img src='psIcon.webp' alt="Personas Icon" style={{width:iconWidth}} /></Box>
                                     <Box><h2>Persona Manager<br /> for Jira</h2></Box>
                                 </Flex>
-                            </Card></a></Link>
+                            </Card></a></Link>}
 
 
                         </div></span>

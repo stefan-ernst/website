@@ -1,19 +1,23 @@
 import Head from "next/head";
 import Styles from "./styles";
-import Menu from "./menu";
-import {useState} from "react";
 
-export default function Header() {
+export default function Header({title, description}) {
     
     return (
         <>
             <Head>
                 <link rel="shortcut icon" href="/iconblue.png"/>
-                <title>Realigned Technologies</title>
+                <title>Realigned Technologies {title ? `: ${title}` : ''}</title>
                 <meta
                     name="description"
-                    content="This is the website of Realigned Technologies Ltd. Realigned Technologies provides consulting services in Switzerland in like development consulting,
-                    Atlassian Consulting, as well as software development services."/>
+                    content={description}/>
+                <meta
+                    name="og:description"
+                    content={description}/>
+                <meta
+                    name="og:title"
+                    content={title}/>
+                <script async defer data-domain="realignedtechnologies.com" src="https://plausible.io/js/plausible.js"></script>
             </Head>
             <style jsx>{`
             .container {

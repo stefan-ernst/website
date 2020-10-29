@@ -15,7 +15,7 @@ export default function ReadConfirmations() {
 
     return (
         <>
-            <Header/>
+            <Header description="Get your team on the same page with Read Confirmations for Confluence" />
             <div className='grid-container'>
                 <Nav/>
 
@@ -28,7 +28,7 @@ export default function ReadConfirmations() {
                         <br />
                         <small>Get to know your users - and communicate user requirements more easily to your team</small>
 
-                        <img src='JM1.png' style={{marginTop: 50, marginBottom: 40, width:'80%',maxWidth:800}}
+                        <img src='rc/RC2.png' style={{marginTop: 50, marginBottom: 40, width:'80%',maxWidth:800}}
                              alt="Journey Mapping Screenshot"/>
 
 
@@ -44,7 +44,7 @@ export default function ReadConfirmations() {
                             <span>Research user's interactions with your product or service. Get a detailed understanding about their wants and needs.</span>
                         </div>
                             <div className={'half'}>
-                        <img src='JM2.png' style={{marginTop: 50,width:'100%',maxWidth:800}}
+                        <img src='rc/RC3.png' style={{marginTop: 50,width:'100%',maxWidth:800}}
                              alt="Journey Mapping Screenshot"/>
                         </div>
                         </div>
@@ -55,7 +55,7 @@ export default function ReadConfirmations() {
                         <div className={'flex container'}>
 
                             <div className={'half'}>
-                                <img src='JM3.png' style={{marginTop: 50,width:'100%',maxWidth:800}}
+                                <img src='rc/RC4.png' style={{marginTop: 50,width:'100%',maxWidth:800}}
                                      alt="Journey Mapping Screenshot"/>
                             </div>
                             <div className={'half'}><span className='Highlight'>Bring high level requirements into an understandable story format </span><br />
@@ -72,7 +72,7 @@ export default function ReadConfirmations() {
                                 <span>Make your user journeys even more customer centric </span>
                             </div>
                             <div className={'half'}>
-                                <img src='JM5.png' style={{marginTop: 50,width:'100%',maxWidth:800}}
+                                <img src='rc/RC6.png' style={{marginTop: 50,width:'100%',maxWidth:800}}
                                      alt="Journey Mapping Screenshot"/>
                             </div>
                         </div>

@@ -7,7 +7,7 @@ export default function Blog() {
 
     return (
         <>
-            <Header />
+            <Header description="End user license agreement for Realigned Technologies apps" />
             <div className='grid-container content'>
                 <Nav />
 

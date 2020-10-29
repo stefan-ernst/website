@@ -4,21 +4,32 @@ import Nav from "../../components/nav";
 import Footer from "../../components/footer";
 import matter from "gray-matter";
 import ReactMarkdown from "react-markdown";
+import BlogStyle from "../../components/Blog/style";
+import Link from "next/link";
 
 
 export default function Post({ frontMatter, markdownBody }) {
 
     return (
         <>
-            <Header />
+            <Header title={frontMatter.title} description={frontMatter.excerpt} />
+            <BlogStyle />
             <div className='grid-container'>
                 <Nav />
 
                 <main className='Main'>
                     <p className='Content FullPage' style={{paddingTop:50}}>
                         <div className={'flex text blog blog_content'}>
-                            <h2>{frontMatter.title}</h2>
-                        <ReactMarkdown source={markdownBody} />
+                            <Link href="/blog"><a>All Posts</a></Link><br />
+                            <h2 className={'title'}>{frontMatter.title}</h2><br />
+                            <div style={{marginBottom:20}}>By {frontMatter.author.name}</div>
+
+                            <div className={'CoverImage'} style={{backgroundImage:`url(${frontMatter.coverImage})`}}>
+
+                            </div>
+                            <span>
+                            <ReactMarkdown source={markdownBody} />
+                            </span>
                         </div>
                     </p>
                 </main>

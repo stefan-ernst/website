@@ -1,8 +1,8 @@
 import HeroButton from "./HeroButton";
 
-export default function ({url, docUrl}) {
+export default function FooterHero({url, docUrl, alternate}) {
     return (
-        <div className={'Content'}>
+        <div className={`Content ${alternate ? "White" : ""}`}>
             <div className={'flex container'}>
                 <div className={'half'}>
                     <br />

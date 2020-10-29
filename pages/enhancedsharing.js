@@ -13,7 +13,15 @@ export default function EnhancedSharing() {
 
     return (
         <>
-            <Header/>
+            <Header description="Enhanced Sharing for Confluence - track sharing documents in Confluence" />
+            <style jsx>
+                {`
+                    h1 {
+                        font-size: 2.4rem;
+                        font-weight: 300;
+                    }
+                `}
+            </style>
             <div className='grid-container'>
                 <Nav/>
 
@@ -22,13 +30,14 @@ export default function EnhancedSharing() {
                 <main className='Main'>
                     <div className='Hero' style={{flexDirection:'column',alignItems:'center'}}>
 
-                        Don't lose track of the pages you share
-                        <br />
-                        <small>Keep everything under control - especially when sharing to larger groups</small>
+                        <h1>Don't lose track of your shared pages</h1>
+
+                        <small>Keep everything under control -  and avoid compliance issues</small>
 
                         <img src='ES3.png' style={{marginTop: 50, marginBottom: 40, width:'80%',maxWidth:800}}
                              alt="Enhanced Sharing Screenshot"/>
 
+                             <br />
 
                     </div>
 
@@ -76,7 +85,22 @@ export default function EnhancedSharing() {
 
                     </div>
 
-                    <FooterHero docUrl="https://docz.realignedtechnologies.com/enhancedsharing" url="https://marketplace.atlassian.com/1219996" />
+                    <div className='Content' style={{flexDirection:'column'}}>
+
+                        <div className={'flex container'}>
+
+                            <div className={'half'}>
+                                <img src='ES3.png' style={{marginTop: 50,width:'100%',maxWidth:800}}
+                                     alt="Journey Mapping Screenshot"/>
+                            </div>
+                            <div className={'half'}><span className='Highlight'>Available for Server & DataCenter</span><br />
+                                <span>Performance tested to work on large Confluence instances</span>
+                            </div>
+                        </div>
+
+                    </div>
+
+                    <FooterHero alternate docUrl="https://docz.realignedtechnologies.com/enhancedsharing" url="https://marketplace.atlassian.com/1219996" />
 
 
                 </main>

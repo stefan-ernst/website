@@ -3,6 +3,7 @@ import Nav from "../components/nav";
 import Footer from "../components/footer";
 import HeroButton from "../components/HeroButton";
 import FooterHero from "../components/FooterHero";
+import Hero from "../components/Hero";
 
 const Flex = props => (<div style={{display:'flex'}}>{props.children}</div>);
 const Box = props => (<div style={{padding:10}}>{props.children}</div>);
@@ -13,24 +14,19 @@ export default function PersonalDashboards() {
 
     return (
         <>
-            <Header/>
+            <Header description="Personalize your Confluence dashboards with the Personal Dashboards for Confluence - free of charge on the Atlassian Marketplace" />
             <div className='grid-container'>
                 <Nav/>
 
                 <Footer />
 
                 <main className='Main'>
-                    <div className='Hero' style={{flexDirection:'column',alignItems:'center'}}>
-
-                        Don't lose track of the pages you share
-                        <br />
-                        <small>Keep everything under control - especially when sharing to larger groups</small>
-
-                        <img src='PD3.png' style={{marginTop: 50, marginBottom: 40, width:'80%',maxWidth:800}}
-                             alt="Enhanced Sharing Screenshot"/>
-
-
-                    </div>
+                    <Hero
+                        title='Personalize your Confluence Dashboard'
+                        subtitle='Manage dashboards easily with our free app'
+                        image={<img src='PD3.png' loading="lazy" style={{marginTop: 50, marginBottom: 40, width:'80%',maxWidth:800}}
+                                    alt="Enhanced Sharing Screenshot"/>}
+                        subtext='' />
 
 
                     <div className='Content White' style={{flexDirection:'column'}}>
@@ -41,8 +37,8 @@ export default function PersonalDashboards() {
                                 people to work on the same document - just as before.</span>
                             </div>
                             <div className={'half'}>
-                                <img src='PD1.png' style={{marginTop: 50,width:'100%',maxWidth:800}}
-                                     alt="Journey Mapping Screenshot"/>
+                                <img src='PD1.png' loading="lazy" style={{marginTop: 50,width:'100%',maxWidth:800}}
+                                     alt="Personal Dashboards Screenshot"/>
                             </div>
                         </div>
 
@@ -53,7 +49,7 @@ export default function PersonalDashboards() {
 
                             <div className={'half'}>
                                 <img src='PD2.png' style={{marginTop: 50,width:'100%',maxWidth:800}}
-                                     alt="Journey Mapping Screenshot"/>
+                                     alt="Personal Dashboards Screenshot"/>
                             </div>
                             <div className={'half'}><span className='Highlight'>See your shared pages in your user profile </span><br />
                                 <span>So you can be sure the information has been delivered safe and sound</span>
@@ -70,7 +66,7 @@ export default function PersonalDashboards() {
                             </div>
                             <div className={'half'}>
                                 <img src='PD3.png' style={{marginTop: 50,width:'100%',maxWidth:800}}
-                                     alt="Journey Mapping Screenshot"/>
+                                     alt="Personal Dashboards Screenshot"/>
                             </div>
                         </div>
 

@@ -6,7 +6,7 @@ export default function () {
 
     return (
         <>
-            <Header />
+            <Header description="Get in touch with us - Realigned Technologies" />
             <div className='grid-container'>
                 <Nav />
 
