@@ -30,7 +30,7 @@ export default function Styles() {
               gap: 0px 0px;
               grid-template-areas: "Header Header Header Header Header" "Main Main Main Main Main" "Footer Footer Footer Footer Footer";
               
-              background: url(/3d.png) top center no-repeat, linear-gradient( 154deg, rgb(1, 51, 115) 0%, rgb(20, 132, 188) 100%);
+            background: url(/background.webp) top center no-repeat, linear-gradient( 154deg, rgb(1, 51, 115) 0%, rgb(20, 132, 188) 100%);
             }
             .content {
               grid-template-areas: "Header Header Header Header Header" ". Main Main Main ." "Footer Footer Footer Footer Footer";
@@ -41,11 +41,14 @@ export default function Styles() {
              
             .Header { 
                  grid-area: Header;
+                
+                 font-size: 0.9rem;
                  padding: 0.5rem;
                  padding-top: 1rem;
              }
             .Footer { 
                 grid-area: Footer;
+                font-size: 1rem;
                 padding: 1rem;
                 text-align: center;
                 position: relative;
@@ -65,7 +68,7 @@ export default function Styles() {
             }
             .Main { 
                 grid-area: Main;
-                font-weight: 400;
+                font-weight: 300;
                 padding: 0;
             }
             ul.standard {
@@ -151,6 +154,7 @@ export default function Styles() {
                 text-align: center;
             }
             .Highlight {
+                font-size: 2.4rem;
                 font-weight: 300;
                  color: #1D222D;
                  margin-bottom: 10px;
@@ -321,6 +325,7 @@ export default function Styles() {
                   html, body {
                       min-height: 100%;
                       min-height: -webkit-fill-available;
+                      
                   }
                   .grid-container {
                       display: grid;
