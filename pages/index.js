@@ -48,14 +48,14 @@ export default function Home() {
                         </div>
                     </div>
                     <div className='Content WithPadding'>
-                        <div className={'Highlight'}>Apps for Jira</div>
+                        <h2>Apps for Jira</h2>
                         <span id='products'><div className={'Demo'}>
 
 
                             <Link href="/journeymapping"><a><Card>
                                 <Flex>
                                     <Box><img src='jmIcon.webp' alt="Journey Mapping Icon" style={{width:iconWidth}} /></Box>
-                                    <Box><h2>Journey Mapping<br /> for Jira</h2></Box>
+                                    <Box><h3>Journey Mapping<br /> for Jira</h3></Box>
                                 </Flex>
                             </Card></a></Link>
 
@@ -71,26 +71,26 @@ export default function Home() {
                     </div>
                     <div className={'Content White WithPadding'}>
 
-                        <div className={'Highlight'}>Apps for Confluence</div>
+                        <h2>Apps for Confluence</h2>
                         <div className={'Demo'}>
                             <Link href="/readconfirmations"><a><Card>
 
                                 <Flex>
                                     <Box><img src='rcIcon.webp' alt="Read Confirmations Icon" style={{width:iconWidth}} /></Box>
-                                    <Box><h2>Read Confirmations<br /> for Confluence</h2></Box>
+                                    <Box><h3>Read Confirmations<br /> for Confluence</h3></Box>
                                 </Flex>
 
                             </Card></a></Link>
                             <Link href="/enhancedsharing"><a><Card>
                                 <Flex>
                                     <Box><img src='ESIcon.webp' alt="Enhanced Sharing Icon" style={{width:iconWidth}} /></Box>
-                                    <Box><h2>Enhanced Sharing<br /> for Confluence</h2></Box>
+                                    <Box><h3>Enhanced Sharing<br /> for Confluence</h3></Box>
                                 </Flex>
                             </Card></a></Link>
                             <Link href="/personaldashboards"><a><Card>
                                 <Flex>
                                     <Box><img src='pdIcon.webp' alt="Personal Dashboards Icon" style={{width:iconWidth}} /></Box>
-                                    <Box><h2>Personal Dashboards<br /> for Confluence</h2></Box>
+                                    <Box><h3>Personal Dashboards<br /> for Confluence</h3></Box>
                                 </Flex>
                             </Card></a></Link>
                         </div>

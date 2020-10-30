@@ -3,6 +3,8 @@ import Navigation from "../components/Navigation";
 import Footer from "../components/footer";
 import HeroButton from "../components/HeroButton";
 import FooterHero from "../components/FooterHero";
+import Hero from "../components/Hero";
+import Link from "next/link";
 
 const Flex = props => (<div style={{display:'flex'}}>{props.children}</div>);
 const Box = props => (<div style={{padding:10}}>{props.children}</div>);
@@ -28,18 +30,12 @@ export default function EnhancedSharing() {
                 <Footer />
 
                 <main className='Main'>
-                    <div className='Hero' style={{flexDirection:'column',alignItems:'center'}}>
 
-                        <h1>Don't lose track of your shared pages</h1>
+                    <Hero image={<img src='ES3.png' loading="lazy" style={{marginTop: 50, marginBottom: 40, width:'80%',maxWidth:800}}
+                                      alt="Enhanced Sharing Screenshot"/>}
+                          subtitle="Keep everything under control -  and avoid compliance issues"
+                          title="Don't lose track of your shared pages" />
 
-                        <small>Keep everything under control -  and avoid compliance issues</small>
-
-                        <img src='ES3.png' style={{marginTop: 50, marginBottom: 40, width:'80%',maxWidth:800}}
-                             alt="Enhanced Sharing Screenshot"/>
-
-                             <br />
-
-                    </div>
 
 
                     <div className='Content White' style={{flexDirection:'column'}}>
@@ -50,8 +46,8 @@ export default function EnhancedSharing() {
                                 people to work on the same document - just as before.</span>
                             </div>
                             <div className={'half'}>
-                                <img src='ES1.png' style={{marginTop: 50,width:'60%',maxWidth:500}}
-                                     alt="Journey Mapping Screenshot"/>
+                                <img src='sharing.png' style={{marginTop: 50,width:'60%',maxWidth:500}}
+                                     alt="Confluence Sharing dialog screenshot"/>
                             </div>
                         </div>
 
@@ -64,7 +60,7 @@ export default function EnhancedSharing() {
                                 <img src='ES2.png' style={{marginTop: 50,width:'100%',maxWidth:800}}
                                      alt="Journey Mapping Screenshot"/>
                             </div>
-                            <div className={'half'}><span className='Highlight'>See your shared pages in your user profile </span><br />
+                            <div className={'half'}><span className='Highlight'>See shared pages in your user profile </span><br />
                                 <span>So you can be sure the information has been delivered safe and sound</span>
                             </div>
                         </div>

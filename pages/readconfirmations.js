@@ -5,6 +5,7 @@ import Navigation from "../components/Navigation";
 import Footer from "../components/footer";
 import HeroButton from "../components/HeroButton";
 import FooterHero from "../components/FooterHero";
+import Hero from "../components/Hero";
 
 const Flex = props => (<div style={{display:'flex'}}>{props.children}</div>);
 const Box = props => (<div style={{padding:10}}>{props.children}</div>);
@@ -22,20 +23,13 @@ export default function ReadConfirmations() {
                 <Footer />
 
                 <main className='Main'>
-                    <div className='Hero' style={{flexDirection:'column',alignItems:'center'}}>
-
-                        Connect user requirements to your Jira issues
-                        <br />
-                        <small>Get to know your users - and communicate user requirements more easily to your team</small>
-
-                        <img src='rc/RC2.png' style={{marginTop: 50, marginBottom: 40, width:'80%',maxWidth:800}}
-                             alt="Journey Mapping Screenshot"/>
 
 
-                        <div className='minor'>Want to learn more about Journey Mapping?<br /> Read the UX design series on our <a href='/blog'>Blog</a></div>
 
-                    </div>
-
+                    <Hero image={<img src='rc/RC2.png' loading="lazy" style={{marginTop: 50, marginBottom: 40, width:'80%',maxWidth:800}}
+                                      alt="Read Confirmations Screenshot"/>}
+                          subtitle="Send read confirmations to make sure others have read & understood your content"
+                          title="Communication - direct and clear" />
 
                     <div className='Content White' style={{flexDirection:'column'}}>
 

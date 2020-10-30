@@ -2,7 +2,7 @@ import Header from "../components/header";
 import Navigation from "../components/Navigation";
 import Footer from "../components/footer";
 
-export default function () {
+export default function Contact() {
 
     return (
         <>
@@ -35,7 +35,7 @@ export default function () {
 
                             <div className={'pureflex start'}>
                                 <div><img src='/globe.svg' style={{width:24}} /></div>
-                                <div><a href="https://realignedtechnologies.atlassian.net/servicedesk/customer/portals" target="_blank" rel="noopener">Help Center</a></div>
+                                <div><a style={{color:'inherit'}} href="https://realignedtechnologies.atlassian.net/servicedesk/customer/portals" target="_blank" rel="noopener">Help Center</a></div>
                             </div>
                             </div>
 

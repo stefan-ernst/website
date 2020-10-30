@@ -5,13 +5,12 @@ export default function Hero({title, subtitle, image, subtext}) {
 
         <div className='Hero' style={{flexDirection:'column',alignItems:'center'}}>
 
-            <span className='Highlight'>{title}</span>
-            <br />
-            <span className='Minor'>{subtitle}</span>
+            <h1>{title}</h1>
+            <h3>{subtitle}</h3>
 
             {image}
 
-            {subtext}
+            <h3 style={{textAlign:'center'}}>{subtext}</h3>
         </div>
         </>
     )

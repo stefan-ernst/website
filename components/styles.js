@@ -75,6 +75,15 @@ export default function Styles() {
             ul.standard li {
                 padding: 0.5rem;
             }
+            img {
+              margin-bottom: 0;
+            }
+            .Hero h1 {
+              color: white;
+            }
+            .Hero h3 {
+              color: white;
+            }
             .Demo {
                 display: flex;
                 justify-content: center;
@@ -135,8 +144,7 @@ export default function Styles() {
                 font-size: 2.2rem;
                 justify-content: center;
                 font-weight: 300;
-                padding: 7rem 0 10rem 0;
-                
+                padding: 7rem 0 7rem 0;
             }
             .Hero small {
             }
@@ -149,7 +157,6 @@ export default function Styles() {
             .Highlight {
                 font-size: 2.4rem;
                 font-weight: 300;
-                 color: #1D222D;
                  margin-bottom: 10px;
             }
             .Hero .Highlight {
