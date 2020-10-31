@@ -36,7 +36,6 @@ export default function BlogStyle() {
                 }
                 a {
                     color: #013373;
-                    font-weight: 600;
                     text-decoration: none;
                     display: inline;
                 }

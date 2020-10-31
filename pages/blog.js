@@ -27,7 +27,7 @@ export default function Blog({posts}) {
                                     <div className='Excerpt'>
                                         <Link href={`/posts/${post.slug}`}><a><h2>{post.title}</h2></a></Link>
                                         <span>{post.excerpt}</span><br /><br />
-                                        <Link href={`/posts/${post.slug}`}><a>Continue reading</a></Link>
+                                        <Link href={`/posts/${post.slug}`}><a><b style={{fontWeight:600}}>Continue reading</b></a></Link>
                                     </div>
                                 </div>
 
