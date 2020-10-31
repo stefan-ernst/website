@@ -48,7 +48,7 @@ export default function Home() {
                         </div>
                     </div>
                     <div className='Content WithPadding'>
-                        <h2>Apps for Jira</h2>
+                        <h1>Apps for Jira</h1>
                         <span id='products'><div className={'Demo'}>
 
 
@@ -71,7 +71,7 @@ export default function Home() {
                     </div>
                     <div className={'Content White WithPadding'}>
 
-                        <h2>Apps for Confluence</h2>
+                        <h1>Apps for Confluence</h1>
                         <div className={'Demo'}>
                             <Link href="/readconfirmations"><a><Card>
 

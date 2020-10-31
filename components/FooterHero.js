@@ -6,7 +6,7 @@ export default function FooterHero({url, docUrl, alternate}) {
             <div className={'flex container'}>
                 <div className={'half'}>
                     <br />
-                    <span className={'Highlight'}>Available on the Atlassian Marketplace</span> <br />
+                    <h2>Available on the Atlassian Marketplace</h2> <br />
 
                     <br />
                     <div style={{width:'100%',display:'flex',justifyContent:'center'}}>

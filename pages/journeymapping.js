@@ -7,6 +7,7 @@ import HeroButton from "../components/HeroButton";
 import FooterHero from "../components/FooterHero";
 import Link from "next/link";
 import Hero from "../components/Hero";
+import Availability from "../components/Availability";
 
 const Flex = props => (<div style={{display:'flex'}}>{props.children}</div>);
 const Box = props => (<div style={{padding:10}}>{props.children}</div>);
@@ -74,26 +75,10 @@ export default function JourneyMapping() {
 
                     </div>
 
-                    <div className='Content' style={{flexDirection:'column'}}>
-                        <div className={'flex container'}>
 
-                            <div className={'half'}>
-                                <div className='sflex middle'>
-                                <img src='server.svg' style={{margin: 15,width:'20%',maxWidth:400}}
-                                     alt="Journey Mapping Screenshot"/>
-                                    <img src='dc.svg' style={{margin: 15,width:'20%',maxWidth:400}}
-                                         alt="Journey Mapping Screenshot"/>
-                                <img src='cloud.svg' style={{margin: 15,width:'25%',maxWidth:400}}
-                                     alt="Journey Mapping Screenshot"/>
 
-                                </div>
-                            </div>
-                            <div className={'half'}><span className='Highlight'>Available for all Atlassian platforms </span><br />
-                                <span>Server available now - DC & Cloud right around the corner</span>
-                            </div>
-                        </div>
-
-                    </div>
+                    <Availability server dc cloud text={<>Available for all Atlassian platforms<br />
+                        Server available now - DC & Cloud right around the corner</>} />
 
                     <FooterHero alternate docUrl="https://docz.realignedtechnologies.com/journeymapping" url="https://marketplace.atlassian.com/1223654" />
 

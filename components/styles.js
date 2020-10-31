@@ -19,9 +19,6 @@ export default function Styles() {
                 color: rgb(10, 198, 255);
                 text-decoration: none;
             }
-            h1 {
-                font-weight: 500;
-            }
             .grid-container {
               min-height: 100vh;
               display: grid;
@@ -40,8 +37,7 @@ export default function Styles() {
                  grid-area: Header;
                 
                  font-size: 0.9rem;
-                 padding: 0.5rem;
-                 padding-top: 1rem;
+                 padding: 1rem 0.5rem 0.5rem;
              }
             .Footer { 
                 grid-area: Footer;
@@ -98,7 +94,6 @@ export default function Styles() {
             }
             .DemoContent h1, h2, h3, h4 {
                 margin: 0;
-                font-weight: 300;
             }
             
             .Content {
