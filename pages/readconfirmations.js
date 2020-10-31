@@ -6,6 +6,7 @@ import Footer from "../components/footer";
 import HeroButton from "../components/HeroButton";
 import FooterHero from "../components/FooterHero";
 import Hero from "../components/Hero";
+import Availability from "../components/Availability";
 
 const Flex = props => (<div style={{display:'flex'}}>{props.children}</div>);
 const Box = props => (<div style={{padding:10}}>{props.children}</div>);
@@ -34,7 +35,7 @@ export default function ReadConfirmations() {
                     <div className='Content White' style={{flexDirection:'column'}}>
 
                         <div className={'flex container'}>
-                        <div className={'half'}><span className='Highlight'>Create unlimited journey maps right within your Jira projects</span><br />
+                        <div className={'half'}><h1>Create unlimited journey maps right within your Jira projects</h1>
                             <span>Research user's interactions with your product or service. Get a detailed understanding about their wants and needs.</span>
                         </div>
                             <div className={'half'}>
@@ -52,7 +53,7 @@ export default function ReadConfirmations() {
                                 <img src='rc/RC4.png' style={{marginTop: 50,width:'100%',maxWidth:800}}
                                      alt="Journey Mapping Screenshot"/>
                             </div>
-                            <div className={'half'}><span className='Highlight'>Bring high level requirements into an understandable story format </span><br />
+                            <div className={'half'}><h1>Bring high level requirements into an understandable story format </h1>
                                 <span>Break down complex requirements and make them more readable to your team</span>
                             </div>
                         </div>
@@ -62,7 +63,7 @@ export default function ReadConfirmations() {
                     <div className='Content White' style={{flexDirection:'column'}}>
 
                         <div className={'flex container'}>
-                            <div className={'half'}><span className='Highlight'>Manage personas alongside your user journeys</span><br />
+                            <div className={'half'}><h1>Manage personas alongside your user journeys</h1>
                                 <span>Make your user journeys even more customer centric </span>
                             </div>
                             <div className={'half'}>
@@ -73,9 +74,12 @@ export default function ReadConfirmations() {
 
                     </div>
 
+                    <Availability server text={<>Available for Confluence Server - <br />
+                    Let us know if you want to see other platforms!</>} />
 
 
-                    <FooterHero docUrl="https://docz.realignedtechnologies.com/readconfirmations" url="https://marketplace.atlassian.com/1221972" />
+
+                    <FooterHero alternate docUrl="https://docz.realignedtechnologies.com/readconfirmations" url="https://marketplace.atlassian.com/1221972" />
 
                 </main>
 

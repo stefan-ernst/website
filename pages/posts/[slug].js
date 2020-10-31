@@ -14,6 +14,18 @@ export default function Post({ frontMatter, markdownBody }) {
         <>
             <Header title={frontMatter.title} description={frontMatter.excerpt} />
             <BlogStyle />
+            <style jsx global>
+                {`
+                .text img {
+                    width: 85%;
+                    margin: 2rem;
+                    border: 1px solid lightgrey;
+                    border-radius: 5px;
+                    box-shadow: 0 0 1px 0 rgba(0,0,0,0.08), 0 1px 1px 0 rgba(0,0,0,0.08), 0 4px 8px 0 rgba(0,0,0,0.08);
+
+                }
+                `}
+            </style>
             <div className='grid-container'>
                 <Navigation />
 

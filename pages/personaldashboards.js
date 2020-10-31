@@ -4,6 +4,7 @@ import Footer from "../components/footer";
 import HeroButton from "../components/HeroButton";
 import FooterHero from "../components/FooterHero";
 import Hero from "../components/Hero";
+import Availability from "../components/Availability";
 
 const Flex = props => (<div style={{display:'flex'}}>{props.children}</div>);
 const Box = props => (<div style={{padding:10}}>{props.children}</div>);
@@ -32,7 +33,7 @@ export default function PersonalDashboards() {
                     <div className='Content White' style={{flexDirection:'column'}}>
 
                         <div className={'flex container'}>
-                            <div className={'half'}><span className='Highlight'>Works seamlessly with Confluence</span><br />
+                            <div className={'half'}><h1>Works seamlessly with Confluence</h1>
                                 <span>We integrate behind the scenes, so you can use Confluence's native sharing dialog and invite
                                 people to work on the same document - just as before.</span>
                             </div>
@@ -51,7 +52,7 @@ export default function PersonalDashboards() {
                                 <img src='PD2.png' style={{marginTop: 50,width:'100%',maxWidth:800}}
                                      alt="Personal Dashboards Screenshot"/>
                             </div>
-                            <div className={'half'}><span className='Highlight'>See your shared pages in your user profile </span><br />
+                            <div className={'half'}><h1>See your shared pages in your user profile </h1>
                                 <span>So you can be sure the information has been delivered safe and sound</span>
                             </div>
                         </div>
@@ -61,7 +62,7 @@ export default function PersonalDashboards() {
                     <div className='Content White' style={{flexDirection:'column'}}>
 
                         <div className={'flex container'}>
-                            <div className={'half'}><span className='Highlight'>As an admin -<br /> be always in control</span><br />
+                            <div className={'half'}><h1>As an admin -<br /> be always in control</h1>
                                 <span>See what users have shared - inside and outside of your organisation</span>
                             </div>
                             <div className={'half'}>
@@ -72,7 +73,11 @@ export default function PersonalDashboards() {
 
                     </div>
 
-                    <FooterHero docUrl="https://docz.realignedtechnologies.com/enhancedsharing" url="https://marketplace.atlassian.com/1219996" />
+
+                    <Availability server text={<>Available for Confluence Server - <br />
+                        Let us know if you want to see other platforms!</>} />
+
+                    <FooterHero alternate docUrl="https://docz.realignedtechnologies.com/personaldashboards" url="https://marketplace.atlassian.com/1221672" />
 
 
                 </main>
