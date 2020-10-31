@@ -18,11 +18,15 @@ export default function Post({ frontMatter, markdownBody }) {
                 {`
                 .text img {
                     width: 85%;
-                    margin: 2rem;
+                    margin: 2rem 0 2rem 0;
                     border: 1px solid lightgrey;
                     border-radius: 5px;
                     box-shadow: 0 0 1px 0 rgba(0,0,0,0.08), 0 1px 1px 0 rgba(0,0,0,0.08), 0 4px 8px 0 rgba(0,0,0,0.08);
 
+                }
+                img[src$="box"] {
+                    width: 50%;
+                    margin: 1.5rem 0 1.5rem 0;
                 }
                 `}
             </style>
