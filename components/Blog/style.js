@@ -44,6 +44,9 @@ export default function BlogStyle() {
                     color: rgb(10, 198, 255);
                     text-decoration: none;
                 }
+                h3 {
+                  margin-bottom: 1rem;
+                }
                 `}
         </style>
     )

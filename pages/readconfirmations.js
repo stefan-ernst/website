@@ -7,6 +7,7 @@ import HeroButton from "../components/HeroButton";
 import FooterHero from "../components/FooterHero";
 import Hero from "../components/Hero";
 import Availability from "../components/Availability";
+import Link from "next/link";
 
 const Flex = props => (<div style={{display:'flex'}}>{props.children}</div>);
 const Box = props => (<div style={{padding:10}}>{props.children}</div>);
@@ -35,12 +36,12 @@ export default function ReadConfirmations() {
                     <div className='Content White' style={{flexDirection:'column'}}>
 
                         <div className={'flex container'}>
-                        <div className={'half'}><h1>Create unlimited journey maps right within your Jira projects</h1>
-                            <span>Research user's interactions with your product or service. Get a detailed understanding about their wants and needs.</span>
+                        <div className={'half'}><h1>Don't lose track</h1>
+                            <span>Find all your requested read confirmations in your user profile and track their status</span>
                         </div>
                             <div className={'half'}>
                         <img src='rc/RC3.png' style={{marginTop: 50,width:'100%',maxWidth:800}}
-                             alt="Journey Mapping Screenshot"/>
+                             alt="Read Confirmations Screenshot"/>
                         </div>
                         </div>
 
@@ -51,10 +52,10 @@ export default function ReadConfirmations() {
 
                             <div className={'half'}>
                                 <img src='rc/RC4.png' style={{marginTop: 50,width:'100%',maxWidth:800}}
-                                     alt="Journey Mapping Screenshot"/>
+                                     alt="Read Confirmations Screenshot"/>
                             </div>
-                            <div className={'half'}><h1>Bring high level requirements into an understandable story format </h1>
-                                <span>Break down complex requirements and make them more readable to your team</span>
+                            <div className={'half'}><h1>Send requests to users and teams</h1>
+                                <span>Provide your colleagues with a deadline to confirm they have read the page or blog post</span>
                             </div>
                         </div>
 
@@ -63,19 +64,19 @@ export default function ReadConfirmations() {
                     <div className='Content White' style={{flexDirection:'column'}}>
 
                         <div className={'flex container'}>
-                            <div className={'half'}><h1>Manage personas alongside your user journeys</h1>
-                                <span>Make your user journeys even more customer centric </span>
+                            <div className={'half'}><h1>Avoid repetitive work</h1>
+                                <span>Leverage automation rules to automatically request read confirmations on new documents</span>
                             </div>
                             <div className={'half'}>
                                 <img src='rc/RC6.png' style={{marginTop: 50,width:'100%',maxWidth:800}}
-                                     alt="Journey Mapping Screenshot"/>
+                                     alt="Read Confirmations Screenshot"/>
                             </div>
                         </div>
 
                     </div>
 
                     <Availability server text={<>Available for Confluence Server - <br />
-                    Let us know if you want to see other platforms!</>} />
+                        <Link href="/contact"><a style={{color:'inherit'}}>Let us know</a></Link> if you want to see other platforms!</>} />
 
 
 

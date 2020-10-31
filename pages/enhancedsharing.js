@@ -59,7 +59,7 @@ export default function EnhancedSharing() {
 
                             <div className={'half'}>
                                 <img src='ES2.png' style={{marginTop: 50,width:'100%',maxWidth:800}}
-                                     alt="Journey Mapping Screenshot"/>
+                                     alt="Enhanced Sharing Screenshot"/>
                             </div>
                             <div className={'half'}><h1>See shared pages in your user profile </h1>
                                 <span>So you can be sure the information has been delivered safe and sound</span>
@@ -76,7 +76,7 @@ export default function EnhancedSharing() {
                             </div>
                             <div className={'half'}>
                                 <img src='ES3.png' style={{marginTop: 50,width:'100%',maxWidth:800}}
-                                     alt="Journey Mapping Screenshot"/>
+                                     alt="Enhanced Sharing Screenshot"/>
                             </div>
                         </div>
 

@@ -5,6 +5,7 @@ import HeroButton from "../components/HeroButton";
 import FooterHero from "../components/FooterHero";
 import Hero from "../components/Hero";
 import Availability from "../components/Availability";
+import Link from "next/link";
 
 const Flex = props => (<div style={{display:'flex'}}>{props.children}</div>);
 const Box = props => (<div style={{padding:10}}>{props.children}</div>);
@@ -26,16 +27,16 @@ export default function PersonalDashboards() {
                         title='Personalize your Confluence Dashboard'
                         subtitle='Manage dashboards easily with our free app'
                         image={<img src='PD3.png' loading="lazy" style={{marginTop: 50, marginBottom: 40, width:'80%',maxWidth:800}}
-                                    alt="Enhanced Sharing Screenshot"/>}
+                                    alt="Personal Dashboards Screenshot"/>}
                         subtext='' />
 
 
                     <div className='Content White' style={{flexDirection:'column'}}>
 
                         <div className={'flex container'}>
-                            <div className={'half'}><h1>Works seamlessly with Confluence</h1>
-                                <span>We integrate behind the scenes, so you can use Confluence's native sharing dialog and invite
-                                people to work on the same document - just as before.</span>
+                            <div className={'half'}><h1>Meet the Dashboard Manager</h1>
+                                <span>With the Dashboard Manager you can keep all your dashboards in one place.
+                                Manage dashboards with a few clicks and set them as your Confluence landing page</span>
                             </div>
                             <div className={'half'}>
                                 <img src='PD1.png' loading="lazy" style={{marginTop: 50,width:'100%',maxWidth:800}}
@@ -52,8 +53,8 @@ export default function PersonalDashboards() {
                                 <img src='PD2.png' style={{marginTop: 50,width:'100%',maxWidth:800}}
                                      alt="Personal Dashboards Screenshot"/>
                             </div>
-                            <div className={'half'}><h1>See your shared pages in your user profile </h1>
-                                <span>So you can be sure the information has been delivered safe and sound</span>
+                            <div className={'half'}><h1>Switch dashboards on the fly </h1>
+                                <span>Switch between your dashboards right on the Confluence home page</span>
                             </div>
                         </div>
 
@@ -62,8 +63,9 @@ export default function PersonalDashboards() {
                     <div className='Content White' style={{flexDirection:'column'}}>
 
                         <div className={'flex container'}>
-                            <div className={'half'}><h1>As an admin -<br /> be always in control</h1>
-                                <span>See what users have shared - inside and outside of your organisation</span>
+                            <div className={'half'}><h1>You are in control</h1>
+                                <span>Use any page as your Confluence dashboard - unlock all of Confluence powerful macros
+                                to style your landing pages</span>
                             </div>
                             <div className={'half'}>
                                 <img src='PD3.png' style={{marginTop: 50,width:'100%',maxWidth:800}}
@@ -75,7 +77,7 @@ export default function PersonalDashboards() {
 
 
                     <Availability server text={<>Available for Confluence Server - <br />
-                        Let us know if you want to see other platforms!</>} />
+                        <Link href="/contact"><a style={{color:'inherit'}}>Let us know</a></Link> if you want to see other platforms!</>} />
 
                     <FooterHero alternate docUrl="https://docz.realignedtechnologies.com/personaldashboards" url="https://marketplace.atlassian.com/1221672" />
 

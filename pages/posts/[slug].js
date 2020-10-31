@@ -25,9 +25,15 @@ export default function Post({ frontMatter, markdownBody }) {
 
                 }
                 img[src$="box"] {
-                    width: 50%;
+                    width: 60%;
                     margin: 1.5rem 0 1.5rem 0;
                 }
+                img[src$="pure"] {
+                    box-shadow: none;
+                    border-width: 0;
+                    margin: 1.5rem 0 1.5rem 0;
+                }
+                
                 `}
             </style>
             <div className='grid-container'>
@@ -37,7 +43,7 @@ export default function Post({ frontMatter, markdownBody }) {
                     <p className='Content FullPage' style={{paddingTop:50}}>
                         <div className={'flex text blog blog_content'}>
                             <Link href="/blog"><a>All Posts</a></Link><br />
-                            <h2 className={'title'}>{frontMatter.title}</h2><br />
+                            <h2 className={'title'}>{frontMatter.title}</h2>
                             <div style={{marginBottom:20}}>By {frontMatter.author.name}</div>
 
                             <div className={'CoverImage'} style={{marginBottom:20,backgroundImage:`url(${frontMatter.coverImage})`}}>
