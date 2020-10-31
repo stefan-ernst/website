@@ -32,7 +32,9 @@ export default function Styles() {
             .content {
               grid-template-areas: "Header Header Header Header Header" ". Main Main Main ." "Footer Footer Footer Footer Footer";
             }
-            
+            ul {
+              margin-bottom: 0;
+            }
             .Header { 
                  grid-area: Header;
                 
