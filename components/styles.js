@@ -82,6 +82,7 @@ export default function Styles() {
             .Demo {
                 display: flex;
                 justify-content: center;
+                flex-wrap: wrap;
             }
             .DemoNav {
                 border-right: 1px solid #1d1d1d;
@@ -291,7 +292,14 @@ export default function Styles() {
                   }
                   .Hero {
                   text-align: center;
+                  flex-direction: column;
                   padding: 3rem 1rem 3rem 1rem;
+                  }
+                  .Hero .icon {
+                    margin-top: 1rem;
+                    width: 100%;
+                    display: flex;
+                    justify-content: center;
                   }
                   .half {
                     padding-bottom: 0;
