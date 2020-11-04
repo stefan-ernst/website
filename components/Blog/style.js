@@ -46,9 +46,6 @@ export default function BlogStyle() {
                 h3 {
                   margin-bottom: 1rem;
                 }
-                ul {
-                  margin-bottom: 1rem;
-                }
                 `}
         </style>
     )
