@@ -23,7 +23,7 @@ export default function Styles() {
               min-height: 100vh;
               display: grid;
               grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
-              grid-template-rows: 140px 2.3fr 0.2fr;
+              grid-template-rows: 150px 2.3fr 0.2fr;
               gap: 0px 0px;
               grid-template-areas: "Header Header Header Header Header" "Main Main Main Main Main" "Footer Footer Footer Footer Footer";
               background: linear-gradient( 154deg, rgb(1, 51, 115) 0%, rgb(20, 132, 188) 100%);

@@ -21,6 +21,7 @@ export default function Navigation() {
                 .Logo {
                     width: 14rem;
                     margin-bottom: 0;
+                    padding-top: 10px;
                 }
                 nav {
                     max-width: 60%;
