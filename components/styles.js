@@ -23,22 +23,19 @@ export default function Styles() {
               min-height: 100vh;
               display: grid;
               grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
-              grid-template-rows: 110px 2.3fr 0.2fr;
+              grid-template-rows: 140px 2.3fr 0.2fr;
               gap: 0px 0px;
               grid-template-areas: "Header Header Header Header Header" "Main Main Main Main Main" "Footer Footer Footer Footer Footer";
-              
-            background: linear-gradient( 154deg, rgb(1, 51, 115) 0%, rgb(20, 132, 188) 100%);
+              background: linear-gradient( 154deg, rgb(1, 51, 115) 0%, rgb(20, 132, 188) 100%);
             }
             .content {
               grid-template-areas: "Header Header Header Header Header" ". Main Main Main ." "Footer Footer Footer Footer Footer";
             }
             ul {
-              margin-bottom: 0;
+                margin-bottom: 0;
             }
             .Header { 
                  grid-area: Header;
-                
-                 font-size: 0.9rem;
                  padding: 1rem 0.5rem 0.5rem;
              }
             .Footer { 
@@ -74,13 +71,13 @@ export default function Styles() {
                 padding: 0.5rem;
             }
             img {
-              margin-bottom: 0;
+                margin-bottom: 0;
             }
             .Hero h1 {
-              color: white;
+                color: white;
             }
             .Hero h3 {
-              color: white;
+                color: white;
             }
             .Demo {
                 display: flex;
@@ -91,21 +88,18 @@ export default function Styles() {
                 padding: 1rem;
             }
             .DemoContent {
-                padding: 2rem;
-                padding-top: 1rem;
+                padding: 1rem 2rem 0 0;
             }
             .DemoContent h1, h2, h3, h4 {
                 margin: 0;
             }
-            
             .Content {
                 display: flex;
                 align-items: center;
                 justify-content: center;
                 padding: 1rem 1rem 2rem 1rem;
-                margin:0;
+                margin: 0;
                 background-color: rgba(250,250,250,1);
-
                 color: #6b7280;
             }
             h1,h2,h3,h4,h5,h6 {
@@ -117,7 +111,6 @@ export default function Styles() {
             }
             .WithPadding {
                 flex-direction: column;
-                
                 padding: 2.5rem 1rem 5rem 1rem;
             }
             .Document {
@@ -154,7 +147,7 @@ export default function Styles() {
             .Highlight {
                 font-size: 2.4rem;
                 font-weight: 300;
-                 margin-bottom: 10px;
+                margin-bottom: 10px;
             }
             .Hero .Highlight {
                 color: white;
@@ -185,7 +178,7 @@ export default function Styles() {
             }
             .top {
                 align-items: flex-start !important;
-                }
+            }
             .start div {
                 padding: 15px 5px 10px 5px;
             }
@@ -219,23 +212,11 @@ export default function Styles() {
             .Subtext  {
                 font-size: 1.5rem;
             }
-            
             .Hero div {
                 padding: 0.4rem;
             }
             .nopadding {
                 padding: 1rem;
-            }
-            
-            nav {
-           
-                max-width: 65%;
-                padding-top: 0.5rem;
-                
-                margin: auto;
-                display: flex;
-                justify-content: space-between;
-                align-items: center;
             }
             nav ul {
                 list-style: none;
@@ -314,10 +295,6 @@ export default function Styles() {
                   }
                   .half {
                     padding-bottom: 0;
-                  }
-                  nav {
-                    max-width: 100%;
-                    padding: 5px;
                   }
                   html, body {
                       min-height: 100%;

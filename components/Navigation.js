@@ -22,10 +22,27 @@ export default function Navigation() {
                     width: 14rem;
                     margin-bottom: 0;
                 }
+                nav {
+                    max-width: 60%;
+                    padding-top: 0.5rem;
+                    margin: auto;
+                    display: flex;
+                    justify-content: space-between;
+                    align-items: center;
+                }
+                @media only screen and (max-width: 1000px){
+                    .Logo {
+                        width: 14rem;
+                        min-width: 0;
+                    }
+                    nav {
+                        max-width: 95%;
+                    }
+                }
                 `}
             </style>
             <nav role="navigation" aria-label="Main">
-                <Link href="/"><a><img src="/Realigned_Single.svg" alt="Realigned Logo"
+                <Link href="/"><a><img src="/images/RealignedSoftware.svg" alt="Realigned Logo"
                         className='Logo'/></a></Link>
 
                 <Menu open={menuOpen} setOpen={setMenuOpen}/>
