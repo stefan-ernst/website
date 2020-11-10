@@ -44,7 +44,7 @@ export default function BlogStyle() {
                     text-decoration: none;
                 }
                 h3 {
-                  margin-bottom: 1rem;
+                  margin: 1rem 0 1rem 0;
                 }
                 `}
         </style>
