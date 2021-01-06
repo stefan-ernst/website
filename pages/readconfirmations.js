@@ -75,8 +75,7 @@ export default function ReadConfirmations() {
 
                     </div>
 
-                    <Availability server text={<>Available for Confluence Server - <br />
-                        <Link href="/contact"><a style={{color:'inherit'}}>Let us know</a></Link> if you want to see other platforms!</>} />
+                    <Availability server dc text={<>Available for Confluence Server and Data Center</>} />
 
 
 
