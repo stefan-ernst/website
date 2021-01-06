@@ -76,8 +76,8 @@ export default function PersonalDashboards() {
                     </div>
 
 
-                    <Availability server text={<>Available for Confluence Server - <br />
-                        <Link href="/contact"><a style={{color:'inherit'}}>Let us know</a></Link> if you want to see other platforms!</>} />
+                    <Availability server datacenter text={<>Available for Confluence Server and Data Center - <br />
+                        totally free!</>} />
 
                     <FooterHero alternate docUrl="https://docz.realignedtechnologies.com/personaldashboards" url="https://marketplace.atlassian.com/1221672" />
 
