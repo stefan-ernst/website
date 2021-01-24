@@ -38,7 +38,7 @@ export default function Home() {
                             <small>Now available for Jira Cloud & On Premises</small>
                         </p>
                         <br /><HeroButton button1={{title:'Try it free',href:'https://marketplace.atlassian.com/1223654',isBlank:true}}
-                       button2={{title:'Feature Overview',href:'/journeymapping'}}/>
+                       button2={{title:'Feature Overview',href:'https://journeymapping.app'}}/>
                        </div>
 
 
