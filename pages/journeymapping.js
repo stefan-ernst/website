@@ -80,7 +80,7 @@ export default function JourneyMapping() {
                     <Availability server dc cloud text={<>Available for all Atlassian platforms<br />
                         Server & Cloud available now - Data Center coming very soon!</>} />
 
-                    <FooterHero alternate docUrl="https://docz.realignedtechnologies.com/journeymapping" url="https://marketplace.atlassian.com/1223654" />
+                    <FooterHero alternate docUrl="https://journeymapping.app/docs" url="https://marketplace.atlassian.com/1223654" />
 
                 </main>
 
