@@ -35,7 +35,7 @@ export default function Home() {
                         <p className='Subtext animate__animated animate__fadeInUp' style={{lineHeight:1.5}}>
                             Connect your customer journeys with your work items<br />
 
-                            <small>Now available for Jira Server</small>
+                            <small>Now available for Jira Cloud & On Premises</small>
                         </p>
                         <br /><HeroButton button1={{title:'Try it free',href:'https://marketplace.atlassian.com/1223654',isBlank:true}}
                        button2={{title:'Feature Overview',href:'/journeymapping'}}/>
