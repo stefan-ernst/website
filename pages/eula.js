@@ -1,7 +1,6 @@
 import Header from "../components/header";
 import Navigation from "../components/Navigation";
 import Footer from "../components/footer";
-import { attributes, react as Eula } from '../_posts/eula.md';
 
 export default function Blog() {
 
@@ -13,7 +12,6 @@ export default function Blog() {
 
                 <main className='Main'>
                     <div className='Document'>
-                        <Eula />
                     </div>
                 </main>
 

@@ -8,10 +8,10 @@ export default function HeroButton({button1, button2, button2Color}) {
       button {
         background-color: #1774C8;
         color: white;
-        border-radius: 3px;
+        border-radius: 5px;
         font-size: 1rem;
-        padding: 1rem 2rem 1rem 2rem;
-        font-weight: 600;
+        padding: 0.5rem 2rem;
+        font-weight: 400;
         border: 0;
         cursor: pointer;
       }

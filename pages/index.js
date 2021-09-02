@@ -25,27 +25,25 @@ export default function Home() {
                 <main className='Main'>
                     <div className='Hero'>
 
-                        <div style={{paddingRight: 20}} className='icon'>
-                            <picture>
-                                <source srcSet="/jmIcon.webp" type="image/webp"/>
-                                <source srcSet="/jmIcon.png" type="image/png"/>
-                                <img src="/jmIcon.png" alt="Journey Maps Icon" style={{width: iconWidth}}/>
-                            </picture>
-                        </div>
-                        <div>
-                            <span className="animate__animated animate__fadeInUp">Journey Mapping for Jira</span>
+                        <div style={{textAlign:'center'}}>
+                            <span className="animate__animated animate__fadeInUp">Story Mapping for Jira - Pro</span>
                             <br/>
                             <p className='Subtext animate__animated animate__fadeInUp' style={{lineHeight: 1.5}}>
-                                Connect your customer journeys with your work items<br/>
+                                Focus on user value & prioritize the right work
+                                <br/>
 
-                                <small>Now available for Jira Cloud & On Premises</small>
-                            </p>
-                            <br/><HeroButton button1={{
+                                <picture>
+                                    <source srcSet="/SMHighlight.webp" type="image/webp"/>
+                                    <source srcSet="/SMHighlight.png" type="image/png"/>
+                                    <img src="/SMHighlight.png" alt="Story Maps Highlight Image" style={{width: 600,paddingTop:'1rem'}}/>
+                                </picture><br />
+                                <small>Now available for Jira Cloud & Server & DC</small>
+                            </p><HeroButton button1={{
                             title: 'Try it free',
-                            href: 'https://marketplace.atlassian.com/1223654',
+                            href: 'https://marketplace.atlassian.com/1224417',
                             isBlank: true
                         }}
-                                             button2={{title: 'Feature Overview', href: 'https://journeymapping.app'}}/>
+                                             button2={{title: 'Feature Overview', href: 'https://storymapping.app'}}/>
                         </div>
 
 
@@ -78,24 +76,29 @@ export default function Home() {
                             <Link href="https://storymapping.app"><a><NewCard>
                                 <Flex column>
                                     <Box centered> <picture>
-                                          <source srcSet="/storymap.webp" type="image/webp"/>
-                                          <source srcSet="/storymap.png" type="image/png"/>
-                                          <img src="/storymap.png" alt="Story Maps Icon" style={{width: iconWidth}}/>
+                                          <source srcSet="/smProIcon.png" type="image/png"/>
+                                          <img src="/smProIcon.png" alt="Story Maps Icon" style={{width: iconWidth}}/>
                                         </picture></Box>
                                     <Box centered><h3>Story Mapping<br/> for Jira</h3></Box>
                                 </Flex>
                             </NewCard></a></Link>
 
-                            <Link href="/journeymapping"><a><NewCard>
+                            <Link href="https://journeymapping.app"><a><NewCard>
                                 <Flex column>
                                     <Box centered> <picture>
-                                          <source srcSet="/jmIcon.webp" type="image/webp"/>
                                           <source srcSet="/jmIcon.png" type="image/png"/>
                                           <img src="/jmIcon.png" alt="Journey Maps Icon" style={{width: iconWidth}}/>
                                         </picture></Box>
                                     <Box centered><h3>Journey Mapping<br/> for Jira</h3></Box>
                                 </Flex>
                             </NewCard></a></Link>
+
+                            <Link href="https://betterpersonas.app"><a><NewCard>
+                            <Flex column>
+                                <Box centered><img src='PersonaAppIcon.png' alt="Personas Icon" style={{width: iconWidth}}/></Box>
+                                <Box centered><h3>Personas for Jira</h3></Box>
+                            </Flex>
+                        </NewCard></a></Link>
                             </div>
                         </span>
                     </div>
@@ -111,9 +114,8 @@ export default function Home() {
                                 <Flex column>
                                     <Box centered>
                                         <picture>
-                                          <source srcSet="/rc/rcIconNew.webp" type="image/webp"/>
-                                          <source srcSet="/rc/rcIconNew.png" type="image/png"/>
-                                          <img src="/rc/rcIconNew.png" alt="Read Confirmations Icon"
+                                          <source srcSet="/rcIcon.png" type="image/png"/>
+                                          <img src="/rcIcon.png" alt="Read Confirmations Icon"
                                                style={{width: iconWidth}}/>
                                         </picture></Box>
                                     <Box centered><h3>Read Confirmations<br/> for Confluence</h3></Box>
@@ -124,9 +126,8 @@ export default function Home() {
                                 <Flex column>
                                     <Box centered>
                                          <picture>
-                                          <source srcSet="/ESIcon.webp" type="image/webp"/>
-                                          <source srcSet="/ESIcon.png" type="image/png"/>
-                                          <img src="/ESIcon.png" alt="Enhanced Sharing Icon"
+                                          <source srcSet="/esIcon.png" type="image/png"/>
+                                          <img src="/esIcon.png" alt="Enhanced Sharing Icon"
                                                style={{width: iconWidth}}/>
                                         </picture></Box>
                                     <Box centered><h3>Enhanced Sharing<br/> for Confluence</h3></Box>
@@ -136,9 +137,8 @@ export default function Home() {
                                 <Flex column>
                                     <Box centered>
                                         <picture>
-                                          <source srcSet="/pdIcon.webp" type="image/webp"/>
-                                          <source srcSet="/pdIcon.png" type="image/png"/>
-                                          <img src="/pdIcon.png" alt="Personal Dashboards Icon"
+                                          <source srcSet="/PersonalDashboards.png" type="image/png"/>
+                                          <img src="/PersonalDashboards.png" alt="Personal Dashboards Icon"
                                                style={{width: iconWidth}}/>
                                         </picture></Box>
                                     <Box centered><h3>Personal Dashboards<br/> for Confluence</h3></Box>

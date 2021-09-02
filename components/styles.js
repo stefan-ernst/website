@@ -10,6 +10,7 @@ export default function Styles() {
               background-color: rgba(250,250,250,1);
               padding: 0;
               color: white;
+              font-family: Noto Sans, sans-serif;
             }
             a {
                 color: white;
@@ -26,7 +27,7 @@ export default function Styles() {
               grid-template-rows: 150px 2.3fr 0.2fr;
               gap: 0px 0px;
               grid-template-areas: "Header Header Header Header Header" "Main Main Main Main Main" "Footer Footer Footer Footer Footer";
-              background: linear-gradient( 154deg, rgb(1, 51, 115) 0%, rgb(20, 132, 188) 100%);
+                background: linear-gradient(135deg, #1388E7 2.64%, #1AB1BC 102.56%, #1AB1BB 102.57%, #6B30C4 102.58%, #2874BB 102.74%, #1C7ED9 102.74%);
             }
             .content {
               grid-template-areas: "Header Header Header Header Header" ". Main Main Main ." "Footer Footer Footer Footer Footer";
@@ -41,12 +42,13 @@ export default function Styles() {
             .Footer { 
                 grid-area: Footer;
                 font-size: 1rem;
-                padding: 1rem;
+                padding: 3rem;
+                padding-bottom: 10rem;
                 text-align: center;
                 position: relative;
                 border-top: 1px solid white;
                 color: white;
-                background-color: #013373;
+  background: linear-gradient(135deg, #1388E7 2.64%, #1AB1BC 102.56%, #1AB1BB 102.57%, #6B30C4 102.58%, #2874BB 102.74%, #1C7ED9 102.74%);
             }
             .Footer a {
                 color: white;
@@ -132,10 +134,10 @@ export default function Styles() {
                 box-sizing: border-box;
                 display: flex;
                 align-items: flex-start;
-                font-size: 2.2rem;
+                font-size: 2rem;
                 justify-content: center;
                 font-weight: 300;
-                padding: 7rem 0 7rem 0;
+                padding: 3rem 0 7rem 0;
             }
             .Hero small {
             }

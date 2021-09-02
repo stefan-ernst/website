@@ -43,7 +43,7 @@ export default function Navigation() {
                 `}
             </style>
             <nav role="navigation" aria-label="Main">
-                <Link href="/"><a><img src="/images/RealignedSoftware.svg" alt="Realigned Logo"
+                <Link href="/"><a><img src="/images/RealignedLogo.svg" alt="Realigned Logo"
                         className='Logo'/></a></Link>
 
                 <Menu open={menuOpen} setOpen={setMenuOpen}/>
