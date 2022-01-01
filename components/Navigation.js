@@ -43,9 +43,7 @@ export default function Navigation({isWhite}) {
                     padding-top: 0.5rem;
                     margin: auto;
                     display: flex;
-                    justify-content: space-between;
-                    align-items: flex-end;
-                                   
+                    justify-content: space-between;                                   
                 }
                 
                 @media only screen and (max-width: 1000px){
