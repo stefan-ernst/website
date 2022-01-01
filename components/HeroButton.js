@@ -1,5 +1,3 @@
-import {isBlockedPage} from "next/dist/next-server/server/utils";
-
 export default function HeroButton({button1, button2, button2Color}) {
 
     return (

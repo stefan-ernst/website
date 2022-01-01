@@ -8,7 +8,7 @@ export default function Contact() {
         <>
             <Header description="Get in touch with us - Realigned Technologies" />
             <div className='grid-container'>
-                <Navigation />
+                <Navigation isWhite />
 
                 <main className='Main'>
                     <p className='Content FullPage'>
@@ -48,7 +48,7 @@ export default function Contact() {
                     </p>
                 </main>
 
-                <Footer />
+                <Footer isWhite />
             </div>
         </>
     );

@@ -6,6 +6,7 @@ import FooterHero from "../components/FooterHero";
 import Hero from "../components/Hero";
 import Availability from "../components/Availability";
 import Link from "next/link";
+import Section from "../components/Section";
 
 const Flex = props => (<div style={{display:'flex'}}>{props.children}</div>);
 const Box = props => (<div style={{padding:10}}>{props.children}</div>);
@@ -17,7 +18,8 @@ export default function PersonalDashboards() {
     return (
         <>
             <Header description="Personalize your Confluence dashboards with the Personal Dashboards for Confluence - free of charge on the Atlassian Marketplace" />
-            <div className='grid-container'>
+
+            <Section hasHero>
                 <Navigation/>
 
                 <Footer />
@@ -84,7 +86,7 @@ export default function PersonalDashboards() {
 
                 </main>
 
-            </div>
+            </Section>
         </>);
 
 }

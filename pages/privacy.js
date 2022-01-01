@@ -8,7 +8,7 @@ export default function Privacy() {
         <>
             <Header description="Privacy Policy for Realigned Technologies website and apps" />
             <div className='grid-container'>
-                <Navigation />
+                <Navigation isWhite />
 
                 <main className='Main'>
                     <p className='Content'>
@@ -80,7 +80,7 @@ export default function Privacy() {
                     </p>
                 </main>
 
-                <Footer />
+                <Footer isWhite />
             </div>
         </>
     );

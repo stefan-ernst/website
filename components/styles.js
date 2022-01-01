@@ -10,7 +10,7 @@ export default function Styles() {
               background-color: rgba(250,250,250,1);
               padding: 0;
               color: white;
-              font-family: Noto Sans, sans-serif;
+              font-family: ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
             }
             a {
                 color: white;
@@ -27,7 +27,6 @@ export default function Styles() {
               grid-template-rows: 150px 2.3fr 0.2fr;
               gap: 0px 0px;
               grid-template-areas: "Header Header Header Header Header" "Main Main Main Main Main" "Footer Footer Footer Footer Footer";
-                background: linear-gradient(135deg, #1388E7 2.64%, #1AB1BC 102.56%, #1AB1BB 102.57%, #6B30C4 102.58%, #2874BB 102.74%, #1C7ED9 102.74%);
             }
             .content {
               grid-template-areas: "Header Header Header Header Header" ". Main Main Main ." "Footer Footer Footer Footer Footer";
@@ -42,13 +41,12 @@ export default function Styles() {
             .Footer { 
                 grid-area: Footer;
                 font-size: 1rem;
-                padding: 3rem;
+                padding: 2rem;
                 padding-bottom: 10rem;
                 text-align: center;
                 position: relative;
                 border-top: 1px solid white;
                 color: white;
-  background: linear-gradient(135deg, #1388E7 2.64%, #1AB1BC 102.56%, #1AB1BB 102.57%, #6B30C4 102.58%, #2874BB 102.74%, #1C7ED9 102.74%);
             }
             .Footer a {
                 color: white;
@@ -104,10 +102,11 @@ export default function Styles() {
                 margin: 0;
                 background-color: rgba(250,250,250,1);
                 color: #6b7280;
+                line-height: 1.5;
             }
             h1,h2,h3,h4,h5,h6 {
-                color: rgba(22,30,46,1);
-                line-height: 1.5;
+                color: rgb(74, 85, 104);
+                margin-bottom: 1rem;
             }
             .White {
                 background-color: #ffffff;
@@ -134,22 +133,15 @@ export default function Styles() {
                 box-sizing: border-box;
                 display: flex;
                 align-items: flex-start;
-                font-size: 2rem;
                 justify-content: center;
-                font-weight: 300;
                 padding: 3rem 0 7rem 0;
             }
             .Hero small {
-            }
-            .Hero a {
-                font-weight: 500;
-            }  
+            } 
             .Hero .Minor {
                 text-align: center;
             }
             .Highlight {
-                font-size: 2.4rem;
-                font-weight: 300;
                 margin-bottom: 10px;
             }
             .Hero .Highlight {
@@ -164,6 +156,7 @@ export default function Styles() {
             .center {
                 justify-content: center;
             }
+            
             .middle {
                 align-items: center;
             }
@@ -226,6 +219,7 @@ export default function Styles() {
                 display: flex;
                 padding-left: 0;
                 margin-left: 0;
+                justify-content: center;
             }
             nav li {
                 padding: 0.5rem;
@@ -235,17 +229,8 @@ export default function Styles() {
                 text-decoration: none;
                 display: inline-block;
             }
-            .Footer nav {
-                display: inline-block;
-            }
-            nav a {
-                color: white;
-                text-decoration: none;
-            }
-            nav a:hover {
-                color: rgb(10, 198, 255);
-                text-decoration: none;
-            }
+            
+           
               @media only screen and (max-width: 1000px){
                   .Main { 
                     grid-area: Main;

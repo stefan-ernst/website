@@ -8,6 +8,7 @@ import FooterHero from "../components/FooterHero";
 import Hero from "../components/Hero";
 import Availability from "../components/Availability";
 import Link from "next/link";
+import Section from "../components/Section";
 
 const Flex = props => (<div style={{display:'flex'}}>{props.children}</div>);
 const Box = props => (<div style={{padding:10}}>{props.children}</div>);
@@ -19,7 +20,8 @@ export default function ReadConfirmations() {
     return (
         <>
             <Header description="Get your team on the same page with Read Confirmations for Confluence" />
-            <div className='grid-container'>
+
+            <Section hasHero>
                 <Navigation/>
 
                 <Footer />
@@ -83,7 +85,7 @@ export default function ReadConfirmations() {
 
                 </main>
 
-            </div>
+            </Section>
         </>);
 
 }

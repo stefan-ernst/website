@@ -6,6 +6,7 @@ import FooterHero from "../components/FooterHero";
 import Hero from "../components/Hero";
 import Link from "next/link";
 import Availability from "../components/Availability";
+import Section from "../components/Section";
 
 const Flex = props => (<div style={{display:'flex'}}>{props.children}</div>);
 const Box = props => (<div style={{padding:10}}>{props.children}</div>);
@@ -25,7 +26,8 @@ export default function EnhancedSharing() {
                     }
                 `}
             </style>
-            <div className='grid-container'>
+            <Section hasHero>
+
                 <Navigation/>
 
                 <Footer />
@@ -90,7 +92,7 @@ export default function EnhancedSharing() {
 
                 </main>
 
-            </div>
+            </Section>
         </>);
 
 }

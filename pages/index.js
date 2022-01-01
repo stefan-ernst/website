@@ -5,6 +5,8 @@ import HeroButton from "../components/HeroButton";
 import Card from "../components/card";
 import Link from "next/link";
 import NewCard from "../components/newcard";
+import Hero from "../components/Hero";
+import Section from "../components/Section";
 
 const Flex = props => (
     <div style={{display: 'flex', flexDirection: props.column ? 'column' : 'row'}}>{props.children}</div>);
@@ -17,37 +19,28 @@ export default function Home() {
 
     return (
         <>
-            <Header
-                description="Next gen apps for Jira & Confluence. Realigned Technologies is building UX design and collaboration tools"/>
-            <div className='grid-container'>
+            <Header title="Home"
+                description="Product Management and User Story Mapping Apps for Atlassian Jira"/>
+            <Section hasHero>
                 <Navigation/>
 
                 <main className='Main'>
-                    <div className='Hero'>
 
-                        <div style={{textAlign:'center'}}>
-                            <span className="animate__animated animate__fadeInUp">Story Mapping for Jira - Pro</span>
-                            <br/>
-                            <p className='Subtext animate__animated animate__fadeInUp' style={{lineHeight: 1.5}}>
-                                Focus on user value & prioritize the right work
-                                <br/>
-
-                                <picture>
-                                    <source srcSet="/SMHighlight.webp" type="image/webp"/>
-                                    <source srcSet="/SMHighlight.png" type="image/png"/>
-                                    <img src="/SMHighlight.png" alt="Story Maps Highlight Image" style={{width: 600,paddingTop:'1rem'}}/>
-                                </picture><br />
-                                <small>Now available for Jira Cloud & Server & DC</small>
-                            </p><HeroButton button1={{
+                    <Hero
+                        title='Story Mapping for Jira - Pro'
+                        subtitle='Focus on user value & prioritize the right work'
+                        image={<picture>
+                            <source srcSet="/SMHighlight.webp" type="image/webp"/>
+                            <source srcSet="/SMHighlight.png" type="image/png"/>
+                            <img src="/SMHighlight.png" alt="Story Maps Highlight Image" style={{width: 600,paddingTop:'1rem'}}/>
+                        </picture>}
+                        subtext={<HeroButton button1={{
                             title: 'Try it free',
                             href: 'https://marketplace.atlassian.com/1224417',
                             isBlank: true
                         }}
-                                             button2={{title: 'Feature Overview', href: 'https://storymapping.app'}}/>
-                        </div>
+                                             button2={{title: 'Feature Overview', href: 'https://storymapping.app'}}/>} />
 
-
-                    </div>
                     <div className='Content White nopadding'>
                         <div style={{textAlign: 'center'}}>
 
@@ -103,9 +96,24 @@ export default function Home() {
                         </span>
                     </div>
                     <div className='Content White WithPadding'>
+                        <style jsx>
+                            {`
+                                a {
+                                    color: #4B5366;
+                                    text-decoration: none;
+                                }
+                                a:hover {
+                                    color: rgb(66, 153, 225);
+                                    text-decoration: none;
+                                }
+                                `}
+                        </style>
                         <h1>Confluence Apps</h1>
 
-                        <span id='confluence-products' style={{textAlign: 'center'}}>
+                        <span style={{textAlign:'center'}}>We have discontinued our Confluence apps.<br />
+                            <Link href="/dc-discontinuation"><a>Read the announcement</a></Link>.</span>
+                        <br />
+                        <span id='confluence-products' style={{textAlign: 'center',marginTop:'1rem'}}>
 
                     <div className={'Demo'}>
 
@@ -145,14 +153,6 @@ export default function Home() {
                                 </Flex>
                             </NewCard></a></Link>
 
-                        {false && <Link href="/personas"><a><Card>
-                            <Flex>
-                                <Box><img src='psIcon.webp' alt="Personas Icon" style={{width: iconWidth}}/></Box>
-                                <Box><h2>Persona Manager<br/> for Jira</h2></Box>
-                            </Flex>
-                        </Card></a></Link>}
-
-
                         </div></span>
                     </div>
 
@@ -160,7 +160,7 @@ export default function Home() {
                 </main>
 
                 <Footer/>
-            </div>
+            </Section>
         </>
     );
 }

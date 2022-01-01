@@ -8,6 +8,7 @@ import FooterHero from "../components/FooterHero";
 import Link from "next/link";
 import Hero from "../components/Hero";
 import Availability from "../components/Availability";
+import Section from "../components/Section";
 
 const Flex = props => (<div style={{display:'flex'}}>{props.children}</div>);
 const Box = props => (<div style={{padding:10}}>{props.children}</div>);
@@ -20,7 +21,7 @@ export default function JourneyMapping() {
         <>
             <Header description="Journey Mapping for Jira - put your customer journeys right into Jira. Available on the Atlassian Marketplace" />
 
-            <div className='grid-container'>
+            <Section hasHero>
                 <Navigation/>
 
                 <Footer />
@@ -84,7 +85,7 @@ export default function JourneyMapping() {
 
                 </main>
 
-            </div>
+            </Section>
         </>);
 
 }
