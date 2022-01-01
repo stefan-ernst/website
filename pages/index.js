@@ -29,11 +29,8 @@ export default function Home() {
                     <Hero
                         title='Story Mapping for Jira - Pro'
                         subtitle='Focus on user value & prioritize the right work'
-                        image={<picture>
-                            <source srcSet="/SMHighlight.webp" type="image/webp"/>
-                            <source srcSet="/SMHighlight.png" type="image/png"/>
-                            <img src="/SMHighlight.png" alt="Story Maps Highlight Image" style={{width: '80%',maxWidth:800,margin:'auto',paddingTop:'1rem'}}/>
-                        </picture>}
+                        image={                            <img src="/SMHighlight.png" alt="Story Maps Highlight Image" width="1162" height="713" style={{maxWidth:'800px',width:'80%',height:'auto',objectPosition:'center top',paddingTop:'1rem'}}/>
+                        }
                         subtext={<HeroButton button1={{
                             title: 'Try it free',
                             href: 'https://marketplace.atlassian.com/1224417',
