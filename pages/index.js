@@ -32,7 +32,7 @@ export default function Home() {
                         image={<picture>
                             <source srcSet="/SMHighlight.webp" type="image/webp"/>
                             <source srcSet="/SMHighlight.png" type="image/png"/>
-                            <img src="/SMHighlight.png" alt="Story Maps Highlight Image" style={{width: '80%',maxWidth:800,paddingTop:'1rem'}}/>
+                            <img src="/SMHighlight.png" alt="Story Maps Highlight Image" style={{width: '80%',maxWidth:800,margin:'auto',paddingTop:'1rem'}}/>
                         </picture>}
                         subtext={<HeroButton button1={{
                             title: 'Try it free',
