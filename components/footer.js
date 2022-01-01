@@ -23,7 +23,7 @@ export default function Footer() {
             <footer className='Footer'>
 
                 <nav aria-label="Footer">
-                    <ul className='menu'>
+                    <ul>
                         <li>
                             <Link href="/privacy">
                                 <a>Privacy</a>
