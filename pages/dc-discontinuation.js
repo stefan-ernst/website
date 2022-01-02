@@ -1,12 +1,15 @@
 import Header from "../components/header";
 import Navigation from "../components/Navigation";
 import Footer from "../components/footer";
+import {useRouter} from "next/router";
 
 export default function DcDiscontinuation() {
 
+    const router = useRouter();
+
     return (
         <>
-            <Header description="Announcement regarding availability of Data Center approved apps for Atlassian Confluence" />
+            <Header canonical={router.pathname} title="Discontinuation of Confluence Apps" description="Announcement regarding availability of Data Center approved apps for Atlassian Confluence" />
             <div className='grid-container'>
                 <Navigation isWhite />
 
