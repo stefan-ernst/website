@@ -134,7 +134,7 @@ export default function Styles() {
                 display: flex;
                 align-items: flex-start;
                 justify-content: center;
-                padding: 3rem 0 7rem 0;
+                padding: 3rem 0 5rem 0;
             }
             .Hero small {
             } 

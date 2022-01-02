@@ -10,7 +10,7 @@ export default function Hero({title, subtitle, image, subtext}) {
 
             {image}
 
-            <h3 style={{textAlign:'center'}}>{subtext}</h3>
+            <h3 style={{textAlign:'center',paddingTop:'2rem'}}>{subtext}</h3>
         </div>
         </>
     )
