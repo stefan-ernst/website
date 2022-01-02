@@ -96,7 +96,7 @@ export default function Menu({open, setOpen, isWhite}) {
 
             {open && <div className="mobilemenu" onClick={() => setOpen(!open)}>
                 <div style={{position: 'absolute', bottom: 20, right: 20}}><a>Close</a></div>
-                <Items isWhite={isWhite}/>
+                <Items isWhite />
             </div>}
         </>
     );
