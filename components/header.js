@@ -20,6 +20,15 @@ export default function Header({title, description, canonical}) {
                     url: canonical,
                     locale: 'en',
                     site_name: 'Realigned Technologies',
+                    type: 'website',
+                    images: [
+                        {
+                            url: 'https://realignedtechnologies.com/images/OG1.png',
+                            width: 1200,
+                            height: 630,
+                            alt: 'Realigned Technologies'
+                        }
+                    ]
                 }}
             />
             <style jsx>{`

@@ -7,6 +7,7 @@ import Link from "next/link";
 import NewCard from "../components/newcard";
 import Hero from "../components/Hero";
 import Section from "../components/Section";
+import {useRouter} from "next/router";
 
 const Flex = props => (
     <div style={{display: 'flex', flexDirection: props.column ? 'column' : 'row'}}>{props.children}</div>);
@@ -17,10 +18,14 @@ const iconWidth = 80;
 
 export default function Home() {
 
+    const router = useRouter();
+
     return (
         <>
             <Header title="Home"
-                description="Product Management and User Story Mapping Apps for Atlassian Jira"/>
+                description="Product Management and User Story Mapping Apps for Atlassian Jira"
+                canonical={router.pathname}
+            />
             <Section hasHero>
                 <Navigation/>
 
