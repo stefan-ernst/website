@@ -57,13 +57,13 @@ export default function Menu({open, setOpen, isWhite}) {
                 }
                           
                 a {
-                cursor: pointer;
-                    ${isWhite ? 'color: #4B5366;' : 'color: #fff;'}
+                    cursor: pointer;
+                    color: #4B5366;
                     text-decoration: none;
                 }
                 a:hover {
-                    ${isWhite ? 'color: rgb(66, 153, 225);' : 'color: rgb(10, 198, 255);'}
-                text-decoration: none;
+                    color: rgb(66, 153, 225);
+                    text-decoration: none;
                 }     
                 @media only screen and (max-width: 1000px){
                   .menu {
@@ -73,20 +73,30 @@ export default function Menu({open, setOpen, isWhite}) {
                     display: flex;
                     align-items: center;
                   }
+                  a {
+                    cursor: pointer;
+                    color: #4B5366;
+                    text-decoration: none;
+                }
+                a:hover {
+                    color: rgb(66, 153, 225);
+                    text-decoration: none;
+                }  
                 
                 }
                 `}
             </style>
             <div className="menuToggle" onClick={() => setOpen(!open)}>
                 <div>
-                <span></span>
-                <span></span>
-                <span></span>
+                    <span></span>
+                    <span></span>
+                    <span></span>
                 </div>
             </div>
 
-            {open && <div className="mobilemenu" onClick={() => setOpen(!open)}><div style={{position:'absolute',bottom:20,right:20}}><a>Close</a></div>
-               <Items isWhite={isWhite} />
+            {open && <div className="mobilemenu" onClick={() => setOpen(!open)}>
+                <div style={{position: 'absolute', bottom: 20, right: 20}}><a>Close</a></div>
+                <Items isWhite={isWhite}/>
             </div>}
         </>
     );
