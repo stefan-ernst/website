@@ -1,13 +1,15 @@
 import {Items} from "./Navigation";
 
-export default function Menu({open, setOpen}) {
+export default function Menu({open, setOpen, isWhite}) {
 
     return (<>
-            <style jsx>
+            <style jsx global>
                 {`
+                 
                 .menuToggle {
                  cursor: pointer;
                  display: none;
+                
                  }
                 .menuToggle span {
                   display: block;
@@ -17,7 +19,7 @@ export default function Menu({open, setOpen}) {
                   margin-right: 10px;
                   position: relative;
                   
-                  background: #fff;
+                  background-color: ${isWhite ? '#4B5366' : '#fff'};
                   border-radius: 3px;
                   
                   z-index: 1;
@@ -35,26 +37,14 @@ export default function Menu({open, setOpen}) {
                     top: 0;
                     right: 0;
                     height: 100%;
-                    background: #013373;
+                    background-color: rgba(250,250,250,1);
+                    color: #6b7280;
                     list-style-type: none;
                     -webkit-font-smoothing: antialiased;
                     z-index: 100;
+                    border-left: 1px solid lightgrey;
                 }
-                               
-                @media only screen and (max-width: 1000px){
-                  .menu {
-                    display: none;
-                  }
-                  .menuToggle {
-                    display: block;
-                  }
-                
-                }
-                `}
-            </style>
-            <style jsx global>
-                {`
-                 .mobilemenu ul {
+                .mobilemenu ul {
                     list-style: none;
                     display: flex;
                     padding-left: 20px;
@@ -65,16 +55,38 @@ export default function Menu({open, setOpen}) {
                 .mobilemenu li {
                     margin: 4px;
                 }
+                          
+                a {
+                cursor: pointer;
+                    ${isWhite ? 'color: #4B5366;' : 'color: #fff;'}
+                    text-decoration: none;
+                }
+                a:hover {
+                    ${isWhite ? 'color: rgb(66, 153, 225);' : 'color: rgb(10, 198, 255);'}
+                text-decoration: none;
+                }     
+                @media only screen and (max-width: 1000px){
+                  .menu {
+                    display: none;
+                  }
+                  .menuToggle {
+                    display: flex;
+                    align-items: center;
+                  }
+                
+                }
                 `}
             </style>
             <div className="menuToggle" onClick={() => setOpen(!open)}>
+                <div>
                 <span></span>
                 <span></span>
                 <span></span>
+                </div>
             </div>
 
-            {open && <div className="mobilemenu" onClick={() => setOpen(!open)}>
-               <Items />
+            {open && <div className="mobilemenu" onClick={() => setOpen(!open)}><div style={{position:'absolute',bottom:20,right:20}}><a>Close</a></div>
+               <Items isWhite={isWhite} />
             </div>}
         </>
     );

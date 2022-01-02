@@ -272,7 +272,7 @@ export default function Styles() {
                     margin-right: 10px;
                   }
                   .Logo {
-                    width: 10rem;
+                    width: 8rem;
                   }
                   .Products {
                     flex-direction: column;

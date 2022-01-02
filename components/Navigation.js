@@ -48,7 +48,7 @@ export default function Navigation({isWhite}) {
                 
                 @media only screen and (max-width: 1000px){
                     .Logo {
-                        width: 14rem;
+                        width: 12rem;
                         min-width: 0;
                     }
                     nav {
@@ -62,7 +62,7 @@ export default function Navigation({isWhite}) {
                                        alt="Realigned Logo"
                                        className='Logo'/></a></Link>
 
-                <Menu open={menuOpen} setOpen={setMenuOpen}/>
+                <Menu open={menuOpen} isWhite={isWhite} setOpen={setMenuOpen}/>
                 <div className='menu'>
                     <Items isWhite={isWhite}/>
                 </div>
