@@ -15,13 +15,13 @@ export default function Contact() {
                         <div className={'flex text blog'}>
 
                             <div>
-                            <h2>Contact</h2>
-                            <br />
+                            <h1>Contact</h1>
+
+
                             <div className={'pureflex start'}>
                                 <div><img src='/home.svg' style={{width:24}} /></div>
-                            <div>Realigned Technologies ltd<br />
+                            <div>Realigned Technologies Ltd<br />
 
-                            <br />
                             Suurstoffi 16<br />
                             CH-6343 Rotkreuz<br />
                                 Switzerland<br /></div>
@@ -37,11 +37,13 @@ export default function Contact() {
                                 <div><img src='/globe.svg' style={{width:24}} /></div>
                                 <div><a style={{color:'inherit'}} href="https://realignedtechnologies.atlassian.net/servicedesk/customer/portals" target="_blank" rel="noopener">Help Center</a></div>
                             </div>
+
+
+                                <div className={'PartnerLogo'}>
+                                    <img src="/marketplacepartner.png" style={{width:300}}/>
+                                </div>
                             </div>
 
-                            <div className={'PartnerLogo'}>
-                                <img src="/marketplacepartner.png" style={{width:'80%'}}/>
-                            </div>
 
                             <br />
                         </div>

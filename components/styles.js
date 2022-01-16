@@ -24,7 +24,6 @@ export default function Styles() {
               min-height: 100vh;
               display: grid;
               grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
-              grid-template-rows: 150px 2.3fr 0.2fr;
               gap: 0px 0px;
               grid-template-areas: "Header Header Header Header Header" "Main Main Main Main Main" "Footer Footer Footer Footer Footer";
             }
@@ -147,9 +146,6 @@ export default function Styles() {
             .Hero .Highlight {
                 color: white;
             }
-            .PartnerLogo {
-                margin-left: 50px;
-            }
             .pureflex {
                 display: flex;
             }
@@ -192,7 +188,7 @@ export default function Styles() {
                 flex-direction: column;
             }
             .FullPage {
-                min-height: 80vh;
+                min-height: 50vh;
                 align-items: flex-start;
             }
             .text {
