@@ -158,65 +158,7 @@ export default function Home() {
                         </div></span>
                     </div>
 
-                    <div className={'Content WithPadding'}>
 
-                        <script src='https://www.google.com/recaptcha/api.js'></script>
-
-                        <style>
-                            {`
-                            #drip-ef-542746920 h3 {font - size: 1.125rem; margin: 0 0 .375rem;}
-                            #drip-ef-542746920 > div {margin - bottom: .75rem;}
-                            #drip-ef-542746920 fieldset {border: none; margin: 0; padding: 0;}
-                            #drip-ef-542746920 legend {margin: 0; padding: 0;}
-                            #drip-ef-542746920 input[type="email"],
-                            #drip-ef-542746920 input[type="number"],
-                            #drip-ef-542746920 input[type="tel"],
-                            #drip-ef-542746920 input[type="text"] {margin: 0; padding: .375rem .5625rem; width: 100%;}
-                            #drip-ef-542746920 input[type="checkbox"],
-                            #drip-ef-542746920 input[type="radio"] {margin: .1875rem .1875rem 0 0; padding: 0;}
-                            #drip-ef-542746920 input[type="submit"] {margin: 0; padding: .375rem .5625rem;}
-                            .formelement { padding: 1.5rem 0 0 0; } `}
-
-                        </style>
-
-                        <h1>Let's Keep In Touch!</h1>
-
-                        <form style={{textAlign:'center'}} action="https://www.getdrip.com/forms/542746920/submissions" method="post" data-drip-embedded-form="542746920"
-                              id="drip-ef-542746920">
-                            <div data-drip-attribute="description">
-
-                                    Sign up to stay informed on the latest app news.
-                                <br />No spam, unsubscribe at any time.&nbsp;</div>
-
-                            <div  className={'formelement'} style={{textAlign:'left'}}>
-                                <label htmlFor="drip-email">Email Address</label><br />
-                                <input type="email" id="drip-email" name="fields[email]" defaultValue="" />
-                            </div>
-
-
-                            <div style={{display: "none"}} aria-hidden="true">
-                                <label htmlFor="website">Website</label><br />
-                                <input type="text" id="website" name="website" tabIndex="-1" autoComplete="false" defaultValue="" />
-                            </div>
-
-                            <style jsx>
-                                {`button {
-                                background-color: #1774C8;
-                                color: white;
-                                border-radius: 5px;
-                                font-size: 1rem;
-                                padding: 0.5rem 1.5rem;
-                                font-weight: 400;
-                                border: 0;
-                                cursor: pointer;
-                            }`}
-                            </style>
-                            <div className={'formelement'}>
-                                <button type="submit" data-drip-attribute="sign-up-button">Sign Up</button>
-                            </div>
-                        </form>
-
-                    </div>
 
 
                 </main>
