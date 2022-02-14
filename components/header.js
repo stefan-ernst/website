@@ -1,9 +1,12 @@
 import Head from "next/head";
 import Styles from "./styles";
 import {NextSeo} from "next-seo";
+import {useRouter} from "next/router";
 
-export default function Header({title, description, canonical}) {
-    
+export default function Header({title, description}) {
+
+    const canonical = 'https://realignedtechnologies.com/' + useRouter().asPath;
+
     return (
         <>
             <Head>

@@ -18,13 +18,11 @@ const iconWidth = 80;
 
 export default function Home() {
 
-    const router = useRouter();
 
     return (
         <>
             <Header title="Home"
                 description="Product Management and User Story Mapping Apps for Atlassian Jira"
-                canonical={router.pathname}
             />
             <Section hasHero>
                 <Navigation/>
@@ -91,7 +89,14 @@ export default function Home() {
                             <Link href="https://betterpersonas.app"><a><NewCard>
                             <Flex column>
                                 <Box centered><img src='PersonaAppIcon.png' alt="Personas Icon" style={{width: iconWidth}}/></Box>
-                                <Box centered><h3>Personas for Jira</h3></Box>
+                                <Box centered><h3>Better <br />Personas for Jira</h3></Box>
+                            </Flex>
+                        </NewCard></a></Link>
+
+                                <Link href="https://portfoliomapping.app"><a><NewCard>
+                            <Flex column>
+                                <Box centered><img src='images/denkplanicon.png' alt="Denkplan Portfolio Map Icon" style={{width: iconWidth}}/></Box>
+                                <Box centered><h3>Denkplan <br />Portfolio Map for Jira</h3></Box>
                             </Flex>
                         </NewCard></a></Link>
                             </div>
