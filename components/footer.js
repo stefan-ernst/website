@@ -51,7 +51,7 @@ export default function Footer() {
                 </div>
                 <br/><br/>
 
-                &copy; 2021 Realigned Technologies Ltd<br/>
+                &copy; 2023 Realigned Technologies Ltd<br/>
 
             </footer>
         </>
