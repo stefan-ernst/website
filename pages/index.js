@@ -30,7 +30,7 @@ export default function Home() {
                 <main className='Main'>
 
                     <Hero
-                        title='Story Mapping for Jira - Pro'
+                        title='Advanced Story Maps for Jira'
                         subtitle='Focus on user value & prioritize the right work'
                         image={                            <img src="/SMHighlight.png" alt="Story Maps Highlight Image" width="1162" height="713" style={{maxWidth:'800px',width:'80%',height:'auto',objectPosition:'center top',paddingTop:'1rem'}}/>
                         }
@@ -72,9 +72,16 @@ export default function Home() {
                                           <source srcSet="/smProIcon.png" type="image/png"/>
                                           <img src="/smProIcon.png" alt="Story Maps Icon" style={{width: iconWidth}}/>
                                         </picture></Box>
-                                    <Box centered><h3>Story Mapping<br/> for Jira</h3></Box>
+                                    <Box centered><h3>Story Maps<br/> for Jira</h3></Box>
                                 </Flex>
                             </NewCard></a></Link>
+
+                                <Link href="https://customeractions.app"><a><NewCard>
+                            <Flex column>
+                                <Box centered><img src='images/CaIcon3.png' alt="Customer Actions Icon" style={{width: iconWidth}}/></Box>
+                                <Box centered><h3>Customer Actions for Jira</h3></Box>
+                            </Flex>
+                        </NewCard></a></Link>
 
                             <Link href="https://journeymapping.app"><a><NewCard>
                                 <Flex column>
