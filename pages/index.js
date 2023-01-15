@@ -79,7 +79,7 @@ export default function Home() {
                                 <Link href="https://customeractions.app"><a><NewCard>
                             <Flex column>
                                 <Box centered><img src='images/CaIcon3.png' alt="Customer Actions Icon" style={{width: iconWidth}}/></Box>
-                                <Box centered><h3>Customer Actions for Jira</h3></Box>
+                                <Box centered><h3>Customer Actions<br /> for Jira</h3></Box>
                             </Flex>
                         </NewCard></a></Link>
 
