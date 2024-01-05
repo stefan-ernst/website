@@ -83,15 +83,6 @@ export default function Home() {
                             </Flex>
                         </NewCard></a></Link>
 
-                            <Link href="https://journeymapping.app"><a><NewCard>
-                                <Flex column>
-                                    <Box centered> <picture>
-                                          <source srcSet="/jmIcon.png" type="image/png"/>
-                                          <img src="/jmIcon.png" alt="Journey Maps Icon" style={{width: iconWidth}}/>
-                                        </picture></Box>
-                                    <Box centered><h3>Journey Mapping<br/> for Jira</h3></Box>
-                                </Flex>
-                            </NewCard></a></Link>
 
                             <Link href="https://betterpersonas.app"><a><NewCard>
                             <Flex column>
